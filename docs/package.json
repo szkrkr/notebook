@@ -1,0 +1,15 @@
+{
+  "name": "notebook",
+  "version": "0.1.0",
+  "description": "Szkrkr's notebook to keep my knowledge.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx honkit serve",
+    "build": "npx honkit build . docs"
+  },
+  "author": "szkrkr",
+  "license": "ISC",
+  "devDependencies": {
+    "honkit": "^3.6.17"
+  }
+}
