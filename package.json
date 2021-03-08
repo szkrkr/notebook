@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npx honkit serve",
-    "build": "npx honkit build . docs"
+    "build": "npx honkit build . docs",
+    "precommit": "npm run build"
   },
   "author": "szkrkr",
   "license": "ISC",
