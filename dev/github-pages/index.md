@@ -60,3 +60,10 @@ https://github.com/azer/notebook
 ### 所感
 * Rubyは全然触らないので、gem コマンドを本当に久しぶりに打った。
 * サーバーの管理がなくて良いなと思った。
+
+### その他
+* Github Contoribution Graph
+https://grass-graph.moshimo.works/
+
+* Code Activitly/ Languages
+[WakaTime](https://wakatime.com/)
