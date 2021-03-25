@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>立ち上げ時 · HonKit</title>
+        <title>Vue · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.6.17">
@@ -64,10 +64,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../tips/" />
+    <link rel="next" href="../typescript/" />
     
     
-    <link rel="prev" href="process.html" />
+    <link rel="prev" href="../react-redux/redux.html" />
     
 
     </head>
@@ -213,9 +213,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.6" data-path="../vue/">
+        <li class="chapter active" data-level="2.6" data-path="./">
             
-                <a href="../vue/">
+                <a href="./">
             
                     
                     Vue
@@ -297,9 +297,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.11" data-path="./">
+        <li class="chapter " data-level="2.11" data-path="../project/">
             
-                <a href="./">
+                <a href="../project/">
             
                     
                     プロジェクト進行関連
@@ -311,9 +311,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.11.1" data-path="process.html">
+        <li class="chapter " data-level="2.11.1" data-path="../project/process.html">
             
-                <a href="process.html">
+                <a href="../project/process.html">
             
                     
                     プロセス
@@ -324,9 +324,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.11.2" data-path="launch.html">
+        <li class="chapter " data-level="2.11.2" data-path="../project/launch.html">
             
-                <a href="launch.html">
+                <a href="../project/launch.html">
             
                     
                     立ち上げ時
@@ -457,7 +457,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >立ち上げ時</a>
+        <a href="../.." >Vue</a>
     </h1>
 </div>
 
@@ -472,24 +472,18 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="チームの立ち上げ">チームの立ち上げ</h1>
-<h2 id="立ち上げ時考慮すること">立ち上げ時考慮すること</h2>
+                                <h2 id="vue-30-で、-vuex-をインストールする。---could-not-resolve-dependencypeer-vue200-from-vuex362-nodemodulesvuex-vuex-from-the-root-project">Vue 3.0 で、 Vuex をインストールする。 - &quot;Could not resolve dependency:peer vue@&quot;^2.0.0&quot; from vuex@3.6.2 node_modules/vuex vuex@&quot;*&quot; from the root project&quot;</h2>
+<p><code>npm i vuex --save</code> ができなかった。謎の <code>vue add vuex</code> でできた。
+<a href="https://stackoverflow.com/questions/66652577/how-can-i-install-vuex-in-a-vue-cli-project" target="_blank">https://stackoverflow.com/questions/66652577/how-can-i-install-vuex-in-a-vue-cli-project</a></p>
+<h2 id="vue-で　tsにするには">.vue で　tsにするには</h2>
+<p><code>&lt;script&gt;</code> -&gt; <code>&lt;script lang=&quot;ts&quot;&gt;</code> にする。</p>
+<h2 id="ts-ファイルにしたら-stateが効かない。　--error-in-srccomponentsflashmessagesvue2825-ts2339-property-store-does-not-exist-on-type-componentpublicinstance----getallflashmessages-word---emitsoptions---false-componentoptionsbase----getallflashmessages-word---componentoptionsmixin-componentoptionsmixin-emitsoptions-string-">ts ファイルにしたら $stateが効かない。　- &quot;ERROR in src/components/FlashMessages.vue:28:25 TS2339: Property &apos;$store&apos; does not exist on type &apos;ComponentPublicInstance&lt;{}, {}, {}, { getAllFlashMessages(): Word; }, {}, EmitsOptions, {}, {}, false, ComponentOptionsBase&lt;{}, {}, {}, { getAllFlashMessages(): Word; }, {}, ComponentOptionsMixin, ComponentOptionsMixin, EmitsOptions, string, {}&gt;&gt;&apos;.&quot;</h2>
+<p><a href="https://stackoverflow.com/questions/64412243/vue-js-3-and-typescript-property-store-does-not-exist-on-type-componentpub" target="_blank">https://stackoverflow.com/questions/64412243/vue-js-3-and-typescript-property-store-does-not-exist-on-type-componentpub</a></p>
+<h2 id="ことはじめ">ことはじめ</h2>
 <ul>
-<li>英語含めて単語帳作る（ユビキタス言語）</li>
+<li><a href="https://v3.ja.vuejs.org/guide/introduction.html#%E3%82%B3%E3%83%B3%E3%83%9B%E3%82%9A%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%81%AB%E3%82%88%E3%82%8B%E6%A7%8B%E6%88%90" target="_blank">チュートリアル</a>にある、HTMLをどうすれば良いのかわからないよ！！</li>
 </ul>
-<h2 id="ソースコード作成時">ソースコード作成時</h2>
-<ul>
-<li>命名規則(リソースなど)</li>
-<li>想定する環境 (Prod, Dev, RC, Stagingなど)</li>
-<li>ポート設計</li>
-<li><p>インフラの構築順序<br>構築前準備(DB Admin PW, DB文字列, SSL証明書) -&gt; インフラ構築（Azure PowerShell Script/ARM Template) -&gt; [ Application Release (Web/API/Function only) | データ構築(DB/Storage/KeyVault) ] -&gt; ドメイン登録</p>
-</li>
-<li><p>できれば使うHTTPStatusの認識合わせ<br>(DBないのEntityが見つからなかったときは、204 か 404 か、など)</p>
-</li>
-<li><p>簡単なコーディングルール 
-Datetime or DatetimeOffset</p>
-</li>
-</ul>
+<p>というか Vue3とVu2でだいぶ違うみたい。</p>
 
                                 
                                 </section>
@@ -517,12 +511,12 @@ Datetime or DatetimeOffset</p>
 
             
                 
-                <a href="process.html" class="navigation navigation-prev " aria-label="Previous page: プロセス">
+                <a href="../react-redux/redux.html" class="navigation navigation-prev " aria-label="Previous page: Redux">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../tips/" class="navigation navigation-next " aria-label="Next page: TIPS">
+                <a href="../typescript/" class="navigation navigation-next " aria-label="Next page: TypeScript">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -533,7 +527,7 @@ Datetime or DatetimeOffset</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"立ち上げ時","level":"2.11.2","depth":2,"next":{"title":"TIPS","level":"2.12","depth":1,"path":"dev/tips/index.md","ref":"./dev/tips/index.md","articles":[]},"previous":{"title":"プロセス","level":"2.11.1","depth":2,"path":"dev/project/process.md","ref":"./dev/project/process.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/project/launch.md","mtime":"2021-03-17T13:22:16.736Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T08:46:19.391Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Vue","level":"2.6","depth":1,"next":{"title":"TypeScript","level":"2.7","depth":1,"path":"dev/typescript/index.md","ref":"dev/typescript/index.md","articles":[]},"previous":{"title":"Redux","level":"2.5.2","depth":2,"path":"dev/react-redux/redux.md","ref":"dev/react-redux/redux.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/vue/index.md","mtime":"2021-03-24T13:21:15.911Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T08:46:19.391Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

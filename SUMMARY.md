@@ -11,6 +11,8 @@
 * [React Redux](./dev/react-redux/index.md)
   * [React](dev/react-redux/react.md)
   * [Redux](dev/react-redux/redux.md)
+* [Vue](dev/vue/index.md)
+* [TypeScript](dev/typescript/index.md)
 * [Github Pages](./dev/github-pages/index.md)
 * [Firebase](./dev/firebase/index.md)
   * [Firebase Project](./dev/firebase/firebase-project.md)
