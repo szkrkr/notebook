@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>立ち上げ時 · HonKit</title>
+        <title>TypeScript · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.6.17">
@@ -64,10 +64,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../tips/" />
+    <link rel="next" href="../github-pages/" />
     
     
-    <link rel="prev" href="process.html" />
+    <link rel="prev" href="../vue/" />
     
 
     </head>
@@ -226,9 +226,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.7" data-path="../typescript/">
+        <li class="chapter active" data-level="2.7" data-path="./">
             
-                <a href="../typescript/">
+                <a href="./">
             
                     
                     TypeScript
@@ -297,9 +297,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.11" data-path="./">
+        <li class="chapter " data-level="2.11" data-path="../project/">
             
-                <a href="./">
+                <a href="../project/">
             
                     
                     プロジェクト進行関連
@@ -311,9 +311,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.11.1" data-path="process.html">
+        <li class="chapter " data-level="2.11.1" data-path="../project/process.html">
             
-                <a href="process.html">
+                <a href="../project/process.html">
             
                     
                     プロセス
@@ -324,9 +324,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.11.2" data-path="launch.html">
+        <li class="chapter " data-level="2.11.2" data-path="../project/launch.html">
             
-                <a href="launch.html">
+                <a href="../project/launch.html">
             
                     
                     立ち上げ時
@@ -457,7 +457,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >立ち上げ時</a>
+        <a href="../.." >TypeScript</a>
     </h1>
 </div>
 
@@ -472,24 +472,35 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="チームの立ち上げ">チームの立ち上げ</h1>
-<h2 id="立ち上げ時考慮すること">立ち上げ時考慮すること</h2>
+                                <h2 id="cookie-session-storage-local-storageに保存したいときに使える">cookie, session storage, local storageに保存したいときに使える</h2>
+<p><a href="https://codesandbox.io/s/web-storage-inteface-897nl" target="_blank">https://codesandbox.io/s/web-storage-inteface-897nl</a></p>
+<h2 id="jwt-with-custom-claim-typescrit-sample">JWT with custom claim typescrit sample</h2>
+<p><a href="https://codesandbox.io/s/jwt-decode-sample-g27yk" target="_blank">https://codesandbox.io/s/jwt-decode-sample-g27yk</a></p>
+<h2 id="utility-typesいつ使う">Utility Typesいつ使う???</h2>
+<h1 id="utility-type-list">Utility Type List</h1>
 <ul>
-<li>英語含めて単語帳作る（ユビキタス言語）</li>
+<li>Partial<t> -&gt; interafaceちゃんと整理すれば使わない?</t></li>
+<li>Required<t> -&gt; interafaceちゃんと整理すれば使わない?</t></li>
+<li>Readonly<t> -&gt; interafaceちゃんと整理すれば使わない?</t></li>
+<li>Record<k, t> -&gt; { [playerId: string]: Player } とかしないですむ。</k,></li>
+<li>Pick<t,k> -&gt; interafaceちゃんと整理すれば使わない?</t,k></li>
+<li>Omit<t,k> -&gt; interafaceちゃんと整理すれば使わない?</t,k></li>
+<li>Exclude<t,u>　→ 継承関係整理する必要があるのでは??</t,u></li>
+<li>Extract<t,u>　→ 継承関係整理する必要があるのでは??</t,u></li>
+<li>NonNullable<t> -&gt; どこで使うの..</t></li>
+<li>Parameters<t> -&gt; 引数の型はよくとるから</t></li>
+<li>ConstructorParameters<t>　→ Tuple化しないでよくね??</t></li>
+<li>ReturnType<t> -&gt; Reduxとかでも使える。このtypeなら、このReturn的な感じで。</t></li>
+<li>ThisParameterType　→？</li>
+<li>OmitThisParameter　→？</li>
+<li><p>ThisType<t>　→<a href="https://stackoverflow.com/questions/55029032/what-is-typescripts-thistype-used-for" target="_blank">？</a></t></p>
+</li>
+<li><p><a href="https://www.typescriptlang.org/docs/handbook/utility-types.html" target="_blank">https://www.typescriptlang.org/docs/handbook/utility-types.html</a></p>
+</li>
+<li><a href="https://qiita.com/k-penguin-sato/items/e2791d7a57e96f6144e5" target="_blank">https://qiita.com/k-penguin-sato/items/e2791d7a57e96f6144e5</a></li>
 </ul>
-<h2 id="ソースコード作成時">ソースコード作成時</h2>
-<ul>
-<li>命名規則(リソースなど)</li>
-<li>想定する環境 (Prod, Dev, RC, Stagingなど)</li>
-<li>ポート設計</li>
-<li><p>インフラの構築順序<br>構築前準備(DB Admin PW, DB文字列, SSL証明書) -&gt; インフラ構築（Azure PowerShell Script/ARM Template) -&gt; [ Application Release (Web/API/Function only) | データ構築(DB/Storage/KeyVault) ] -&gt; ドメイン登録</p>
-</li>
-<li><p>できれば使うHTTPStatusの認識合わせ<br>(DBないのEntityが見つからなかったときは、204 か 404 か、など)</p>
-</li>
-<li><p>簡単なコーディングルール 
-Datetime or DatetimeOffset</p>
-</li>
-</ul>
+<h2 id="fakeのtypescriptが必要？？？？？">fakeのtypescriptが必要？？？？？</h2>
+<p><img src="tsconfig_fake_ts.png" alt="fake-ts-is-necessary?"><br>Vue Project使用中..<br><a href="https://stackoverflow.com/questions/41211566/tsconfig-json-buildno-inputs-were-found-in-config-file" target="_blank">https://stackoverflow.com/questions/41211566/tsconfig-json-buildno-inputs-were-found-in-config-file</a></p>
 
                                 
                                 </section>
@@ -517,12 +528,12 @@ Datetime or DatetimeOffset</p>
 
             
                 
-                <a href="process.html" class="navigation navigation-prev " aria-label="Previous page: プロセス">
+                <a href="../vue/" class="navigation navigation-prev " aria-label="Previous page: Vue">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../tips/" class="navigation navigation-next " aria-label="Next page: TIPS">
+                <a href="../github-pages/" class="navigation navigation-next " aria-label="Next page: Github Pages">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -533,7 +544,7 @@ Datetime or DatetimeOffset</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"立ち上げ時","level":"2.11.2","depth":2,"next":{"title":"TIPS","level":"2.12","depth":1,"path":"dev/tips/index.md","ref":"./dev/tips/index.md","articles":[]},"previous":{"title":"プロセス","level":"2.11.1","depth":2,"path":"dev/project/process.md","ref":"./dev/project/process.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/project/launch.md","mtime":"2021-03-17T13:22:16.736Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T08:46:19.391Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"TypeScript","level":"2.7","depth":1,"next":{"title":"Github Pages","level":"2.8","depth":1,"path":"dev/github-pages/index.md","ref":"./dev/github-pages/index.md","articles":[]},"previous":{"title":"Vue","level":"2.6","depth":1,"path":"dev/vue/index.md","ref":"dev/vue/index.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/typescript/index.md","mtime":"2021-03-22T08:46:25.189Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T08:46:19.391Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
