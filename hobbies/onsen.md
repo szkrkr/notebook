@@ -22,11 +22,15 @@ draft..
   * [作並温泉](http://www.sakunami-spa.com/)
     * 佐蔵の湯@湯ノ原ホテル
     無色透明、クセがなく気持ち良い。
+    <img width="300px" src="./assets/onsen-sakunami-yunohara.jpg" alt="onsen sakunami yunohara" />
   * [秋保温泉](http://www.akiuonsenkumiai.com/)
   共同浴場に確か行ったはず。普通に良かった。
 
 ### 関東
 * 群馬
+  * [赤城温泉 湯の沢館](http://yunosawakan.com/)
+  reasonable! it's little hard to visit but there is good atomosphere. An ingredient is copper. 
+    <img width="300px" src="./assets/onsen-akagi-yunosawa.jpg" alt="onsen nanasawa" />
 * 栃木
   * 鬼怒川温泉
   * [那須温泉 鹿の湯](http://www.nasuonsen.com/history/)
@@ -44,6 +48,7 @@ draft..
   * 強羅温泉
   * [七沢温泉 七沢荘](https://www.nanasawasou.jp/)
   スピリチュアルだけど、良い温泉。という評判通り。
+    <img width="300px" src="./assets/onsen-nanasawa.jpg" alt="onsen nanasawa" />
 * 山梨
   * [ほったらかし温泉](http://www.hottarakashi-onsen.com/)
   泉質も良いし、何より景色が気持ち良い。

@@ -3,9 +3,9 @@
 * [Introduction](README.md)
 
 ### Dev
-
 * [Azure](./dev/azure/index.md)
 * [C#](./dev/cs/index.md)
+* [Java](./dev/java/index.md)
 * [SQL Server](./dev/db-sql-server/index.md)
 * [DDD](./dev/ddd/index.md)
 * [React Redux](./dev/react-redux/index.md)
@@ -20,6 +20,9 @@
 * [プロジェクト進行関連](./dev/project/index.md)
   * [プロセス](./dev/project/process.md)
   * [立ち上げ時](./dev/project/launch.md)
+* 書籍
+  * [01 アジャイルレトロスペクティブズ　強いチームを育てる「ふりかえり」の手引き](./dev/books/01-agile-restrospectives.md)
+
 * [TIPS](./dev/tips/index.md)
 
 ### Hobbies
