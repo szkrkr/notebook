@@ -12,7 +12,7 @@
   * [React](dev/react-redux/react.md)
   * [Redux](dev/react-redux/redux.md)
 * [Vue](dev/vue/index.md)
-* [TypeScript](dev/typescript/index.md)
+* [JS/TS](dev/jsts/index.md)
 * [Github Pages](./dev/github-pages/index.md)
 * [Firebase](./dev/firebase/index.md)
   * [Firebase Project](./dev/firebase/firebase-project.md)
@@ -35,3 +35,4 @@
 * [お菓子](./hobbies/okashi.md)
 * [ベトナム](./hobbies/vietnam.md)
 * [南米音楽](./hobbies/nambei.md)
+* [コーヒー](./hobbies/coffee.md)
