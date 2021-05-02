@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>プロジェクト進行関連 · HonKit</title>
+        <title>ErgoDash · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.6.17">
@@ -64,10 +64,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="process.html" />
+    <link rel="next" href="../tips/" />
     
-    
-    <link rel="prev" href="../ga/" />
     
 
     </head>
@@ -310,9 +308,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.12" data-path="./">
+        <li class="chapter " data-level="2.12" data-path="../project/">
             
-                <a href="./">
+                <a href="../project/">
             
                     
                     プロジェクト進行関連
@@ -324,9 +322,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.12.1" data-path="process.html">
+        <li class="chapter " data-level="2.12.1" data-path="../project/process.html">
             
-                <a href="process.html">
+                <a href="../project/process.html">
             
                     
                     プロセス
@@ -337,9 +335,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.12.2" data-path="launch.html">
+        <li class="chapter " data-level="2.12.2" data-path="../project/launch.html">
             
-                <a href="launch.html">
+                <a href="../project/launch.html">
             
                     
                     立ち上げ時
@@ -401,9 +399,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.14.1" data-path="../other/kb-ergodash.html">
+        <li class="chapter active" data-level="2.14.1" data-path="kb-ergodash.html">
             
-                <a href="../other/kb-ergodash.html">
+                <a href="kb-ergodash.html">
             
                     
                     ErgoDash
@@ -547,7 +545,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >プロジェクト進行関連</a>
+        <a href="../.." >ErgoDash</a>
     </h1>
 </div>
 
@@ -562,7 +560,106 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="キーボード自作---ergodash">キーボード自作 - Ergodash</h1>
+<h2 id="概要">概要</h2>
+<p>友人から、Ergodashをいただいたので、慣れない手で電子工作して作っていきました。</p>
+<p>制作時間 .. 合計 6時間程度</p>
+<h2 id="所感">所感</h2>
+<p>時間がかかったのは、ダイオードとキーボードの半田付け。ただし、これは久しぶりだったこともあって、結構楽しい。
+一番辛かったのは、ソフトウェア屋であるにもかかわらず、なかなかトラブルシューティングできなかった QMK Firmwareのアップデート の方..</p>
+<h2 id="トラブル反省">トラブル/反省</h2>
+<h3 id="hard組み立て">Hard組み立て</h3>
+<ul>
+<li><p>半田付けが綺麗にできなかった</p>
+<ul>
+<li>そもそも下手なので、はんだが浸透していない部分が多い。</li>
+<li>ハンダゴテの先が茶色くなって、先があったまらないようになってからは特に半田付けがうまくいかない。使い方が悪かったかも
+→<a href="http://startelc.com/elcLink/craft/sldrMent1.html" target="_blank">ハンダゴテの手入れ方法を知る</a></li>
+</ul>
+</li>
+<li><p>綺麗に基盤にくっついてない。ダイオードが浮いている。
+→マスキングテープで、裏からダイオードを抑えつつやるようにする。</p>
+</li>
+<li><p>資料で読みにくかった部分があった。</p>
+<ul>
+<li>2Uのキーキャップという単語わからない
+→ どうも2つの小さいキーキャップを、一つにまとめたキーキャップのことを言っているみたい</li>
+<li>基盤の裏表がわかりにくい
+→ 先駆者のを参考にした</li>
+</ul>
+</li>
+</ul>
+<h3 id="firmware更新">Firmware更新</h3>
+<h3 id="docker経由でlinuxから更新しようとしたら、できなかった">docker経由でLinuxから更新しようとしたら、できなかった..</h3>
+<p><code>qmk setup</code> 実行時に dotty-dist をcompileできず終了..。<br><code>UnicodeDecodeError: &apos;ascii&apos; codec can&apos;t decode byte 0xe5 in position</code> が解決できなかった。<br>conatiner上で実行したencoding方式は, asciiでなく、utf-8になっているぽいのだが、qmk setupできない。</p>
+<ul>
+<li>OSのlocale 言語設定 変更 -&gt; 変わらず<br>※<a href="https://www.monotalk.xyz/blog/python-pip-install-%E3%81%A7unicodedecodeerror-%E3%81%8C%E7%99%BA%E7%94%9F/" target="_blank">参考</a></li>
+<li>sitecustomize.py 追加 -&gt; 変わらず<br>※<a href="https://shu223.hatenablog.com/entry/20111201/1328334689" target="_blank">参考</a></li>
+<li>pipの不具合かなと <code>pip install --upgrade pip setuptools</code> 実行すると、いったんはとおるが、その後 dotty がimportできないと出て先に進めない..
+※<a href="https://miyabikno-jobs.com/setuppy-egginfo-1/" target="_blank">参考</a></li>
+</ul>
+<h3 id="最終的にmacで対応">最終的にMacで対応</h3>
+<ul>
+<li><p>qmk setupで下記追加コマンドが必要だった。</p>
+<pre><code>% qmk setup
+Ψ Found qmk_firmware at /Users/szkrkr/qmk_firmware.
+Ψ QMK Doctor is checking your environment.
+Ψ QMK home: /Users/szkrkr/qmk_firmware
+Ψ Detected macOS 10.15.7.
+☒ Can&apos;t find arm-none-eabi-gcc in your path.
+☒ Can&apos;t find avr-gcc in your path.
+☒ Can&apos;t run `bin/qmk --version`
+</code></pre><ul>
+<li><p><code>Can&apos;t run bin/qmk --version</code>
+-&gt; <code>python3 -m pip install -r ~/qmk_firmware/requirements.txt</code><br>※ <a href="https://github.com/qmk/qmk_firmware/issues/10270" target="_blank">参考</a></p>
+</li>
+<li><p><code>Can&apos;t find avr-gcc in your path.</code><br>-&gt;  <code>brew install avr-gcc</code></p>
+</li>
+<li><p><code>Can&apos;t find arm-none-eabi-gcc in your path.</code><br>-&gt; 下記を実行<br><code>$ brew tap ArmMbed/homebrew-formulae</code><br><code>$ brew install arm-none-eabi-gcc</code><br>※ <a href="https://www.yokoweb.net/2018/05/16/macos-gcc-arm-brew-install/" target="_blank">参考</a></p>
+</li>
+</ul>
+</li>
+<li><p><a href="https://qiita.com/hokita222/items/a5567d955923125b93ed#reset-your-controller-now%E8%A1%A8%E7%A4%BA%E5%BE%8C%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%82%92%E6%8A%BC%E3%81%97%E3%81%A6%E3%82%82%E5%8F%8D%E5%BF%9C%E3%81%97%E3%81%AA%E3%81%84" target="_blank">「reset your controller now」表示後リセットを押しても反応しない</a>
+本当に上記リンクの対応で直った。</p>
+</li>
+</ul>
+<h3 id="keymap更新">Keymap更新</h3>
+<ul>
+<li><a href="https://qiita.com/3000manJPY/items/7ea7acc5f4f5957170eb" target="_blank">参考</a></li>
+<li>MEMO: <a href="https://config.qmk.fm/#/ergodash/rev1/LAYOUT_4key" target="_blank">keymap用jsonファイルを作ることができるサイト</a></li>
+<li>MEMO: keymapの場所
+<code>/Users/szkrkr/qmk_firmware/keyboards/ergodash/rev1/keymaps</code></li>
+<li>MEMO: json
+<code>/Users/szkrkr/qmk_firmware/keyboards/ergodash/rev1/keymaps/my01-20210502.json</code></li>
+<li>MEMO: flash
+<code>qmk flash ~/qmk_firmware/keyboards/ergodash/rev1/keymaps/my01-20210502.json</code></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>NAME</th>
+<th>KEY-MAP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>my01-20210502.json</td>
+<td><img src="assets/kb-ergodash-my01-20210502.png" alt="my01-20210502"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="links">Links</h2>
+<h3 id="official">Official</h3>
+<ul>
+<li><a href="https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodash" target="_blank">ErgoDash</a></li>
+<li><a href="https://beta.docs.qmk.fm/tutorial/newbs_getting_started" target="_blank">QMK Setup</a></li>
+</ul>
+<h3 id="先駆者さん">先駆者さん</h3>
+<ul>
+<li><a href="https://blog.remin.jp/post/keyboard-ergodash/" target="_blank">もふふろぐ - ErgoDash ビルドログ (はじめての自作キーボード)</a></li>
+<li><a href="https://qiita.com/h-oikawa/items/f1092729917dcabb4372" target="_blank">Qiita - 自作キーボードビルドログ：その１「ErgoDash」組み立て</a></li>
+</ul>
+
                                 
                                 </section>
                             
@@ -589,12 +686,8 @@
 
             
                 
-                <a href="../ga/" class="navigation navigation-prev " aria-label="Previous page: Google Analytics">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
-                
-                <a href="process.html" class="navigation navigation-next " aria-label="Next page: プロセス">
+                <a href="../tips/" class="navigation navigation-next navigation-unique" aria-label="Next page: TIPS">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -605,7 +698,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"プロジェクト進行関連","level":"2.12","depth":1,"next":{"title":"プロセス","level":"2.12.1","depth":2,"path":"dev/project/process.md","ref":"./dev/project/process.md","articles":[]},"previous":{"title":"Google Analytics","level":"2.11","depth":1,"path":"dev/ga/index.md","ref":"dev/ga/index.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/project/index.md","mtime":"2021-03-17T13:22:16.736Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-05-02T11:30:18.388Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ErgoDash","level":"2.14.1","depth":2,"next":{"title":"TIPS","level":"2.15","depth":1,"path":"dev/tips/index.md","ref":"./dev/tips/index.md","articles":[]},"previous":{"title":"その他","level":"2.14","depth":1,"ref":"","articles":[{"title":"ErgoDash","level":"2.14.1","depth":2,"path":"dev/other/kb-ergodash.md","ref":"./dev/other/kb-ergodash.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/other/kb-ergodash.md","mtime":"2021-05-02T11:28:53.686Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-05-02T11:30:18.388Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
