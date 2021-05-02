@@ -10,7 +10,11 @@
 * 谷川岳
   * [2019](https://yamap.com/activities/4920272)
 * 筑波山@茨城
-  * [2021](https://yamap.com/activities/10297003)
+  * [2021.03](https://yamap.com/activities/10297003)
+* 棚山@山梨
+  * [2021.03](https://yamap.com/activities/10396874)
+* 赤城山@群馬
+  * [2021.04](https://yamap.com/activities/10630540)
 
 # 行きたい山
 

@@ -22,6 +22,8 @@
   * [立ち上げ時](./dev/project/launch.md)
 * 書籍
   * [01 アジャイルレトロスペクティブズ　強いチームを育てる「ふりかえり」の手引き](./dev/books/01-agile-restrospectives.md)
+* その他
+  * [ErgoDash](./dev/other/kb-ergodash.md)
 
 * [TIPS](./dev/tips/index.md)
 
@@ -32,3 +34,4 @@
 * [山](./hobbies/yamanobori.md)
 * [お菓子](./hobbies/okashi.md)
 * [ベトナム](./hobbies/vietnam.md)
+* [南米音楽](./hobbies/nambei.md)

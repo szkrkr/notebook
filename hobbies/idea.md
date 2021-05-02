@@ -13,4 +13,8 @@
 # 内見アプリ
 
 
-# 
+# Maven Plugin Manager
+Java Maven Projectに、Nuget Pacakge Manager 的な機能ない。欲しい。
+
+
+
