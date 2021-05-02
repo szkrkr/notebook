@@ -17,6 +17,8 @@
           gtag('js', new Date());
           gtag('config', 'G-5T5SMRWCW9');
         </script>
+        <!-- use google chart -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         
     
     <link rel="stylesheet" href="../../gitbook/style.css">
@@ -239,12 +241,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.8" data-path="../typescript/">
+        <li class="chapter " data-level="2.8" data-path="../jsts/">
             
-                <a href="../typescript/">
+                <a href="../jsts/">
             
                     
-                    TypeScript
+                    JS/TS
             
                 </a>
             
@@ -517,6 +519,19 @@
             
         </li>
     
+        <li class="chapter " data-level="3.7" data-path="../../hobbies/coffee.html">
+            
+                <a href="../../hobbies/coffee.html">
+            
+                    
+                    コーヒー
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -584,28 +599,13 @@ collpased!
 <ul>
 <li><a href="https://eikihaya.hatenablog.com/entry/20170727/1501121212" target="_blank">https://eikihaya.hatenablog.com/entry/20170727/1501121212</a></li>
 </ul>
-<h2 id="achex-sample-code-sandbox">achex-sample: code sandbox</h2>
-<h2 id="環境変数">環境変数</h2>
+<h1 id="環境変数">環境変数</h1>
 <p><code>vi ~/.zshrc</code>で編集すること。
 コマンドライン上だと、再起動すると、消える。
 <a href="https://qiita.com/yakumomutsuki/items/d2fd9f103df7f728c20b" target="_blank">https://qiita.com/yakumomutsuki/items/d2fd9f103df7f728c20b</a></p>
 <p>ちなみに npm へのpathは <code>npm bin -g</code>で確認可能。
 adsf内の場合は、｀.asdf/installs/nodejs/15.10.0/.npm/bin｀ とかになる。</p>
 <p>(vueを入れる時に困った。)</p>
-<h2 id="packagejson-tsconfig関連">package.json, tsconfig関連</h2>
-<h3 id="cannot-use-import-statement-outside-a-module">cannot-use-import-statement-outside-a-module</h3>
-<p><img src="cannot-use-import-statement-outside-a-module.png" alt="cannot-use-import-statement-outside-a-module"></p>
-<p><code>&quot;type&quot;: &quot;module&quot;,</code>をpackage.jsonに
-<a href="https://fredriccliver.medium.com/syntaxerror-cannot-use-import-statement-outside-a-module-69182014b8c6" target="_blank">https://fredriccliver.medium.com/syntaxerror-cannot-use-import-statement-outside-a-module-69182014b8c6</a></p>
-<h3 id="exports-is-not-defined">exports is not defined</h3>
-<pre><code>file:///sample/dist/index.js:2
-Object.defineProperty(exports, &quot;__esModule&quot;, { value: true });
-                      ^
-
-ReferenceError: exports is not defined
-    at file:///sample//dist/index.js:2:23
-</code></pre><p>package.json
-<code>&quot;module&quot;: &quot;commonjs&quot;</code> -&gt; <code>&quot;module&quot;: &quot;ES2015&quot;</code></p>
 
                                 
                                 </section>
@@ -649,7 +649,7 @@ ReferenceError: exports is not defined
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"TIPS","level":"2.15","depth":1,"next":{"title":"温泉","level":"3.1","depth":1,"path":"hobbies/onsen.md","ref":"./hobbies/onsen.md","articles":[]},"previous":{"title":"ErgoDash","level":"2.14.1","depth":2,"path":"dev/other/kb-ergodash.md","ref":"./dev/other/kb-ergodash.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/tips/index.md","mtime":"2021-04-28T11:59:39.341Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-05-02T11:30:18.388Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"TIPS","level":"2.15","depth":1,"next":{"title":"温泉","level":"3.1","depth":1,"path":"hobbies/onsen.md","ref":"./hobbies/onsen.md","articles":[]},"previous":{"title":"ErgoDash","level":"2.14.1","depth":2,"path":"dev/other/kb-ergodash.md","ref":"./dev/other/kb-ergodash.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/tips/index.md","mtime":"2021-05-02T14:24:53.617Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-05-02T14:25:51.089Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
