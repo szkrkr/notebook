@@ -6,9 +6,10 @@
 2. 一つのプロジェクトで、デプロイターゲットを複数登録する。
    https://firebase.google.com/docs/hosting/multisites
 
-→プロジェクトごとに、本番環境、開発環境を分けたい。さらに、Hostingの名前も変えたい！とするときは、上記2つを混ぜ合わせる。
-
-```firebase.json
+→プロジェクトごとに、本番環境、開発環境を分けたい。さらに、Hostingの名前も変えたい！とするときは、上記2つを混ぜ合わせる。  
+  
+firebase.json
+```
 {
   "hosting": [
     {
@@ -36,7 +37,8 @@
   ]
 }
 ```
-```.firebaserc
+.firebaserc
+```
 
 {
   "projects": {

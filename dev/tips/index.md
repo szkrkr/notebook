@@ -30,3 +30,8 @@ adsf内の場合は、｀.asdf/installs/nodejs/15.10.0/.npm/bin｀ とかにな�
 
 (vueを入れる時に困った。)
 
+# Terminal
+* % clear
+  -> clear screen but previous command is remmaining if you scroll.
+* % reset
+  -> clear screen with previous command.
