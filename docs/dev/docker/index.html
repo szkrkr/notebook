@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>01 アジャイルレトロスペクティブズ　強いチームを育てる「ふりかえり」の手引き · HonKit</title>
+        <title>Docker · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.6.17">
@@ -66,6 +66,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="books-02-docker-and-k8s.html" />
+    
+    
+    <link rel="prev" href="../ddd/" />
     
 
     </head>
@@ -179,9 +183,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.6" data-path="../docker/">
+        <li class="chapter active" data-level="2.6" data-path="./">
             
-                <a href="../docker/">
+                <a href="./">
             
                     
                     Docker
@@ -193,9 +197,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.6.1" data-path="../docker/books-02-docker-and-k8s.html">
+        <li class="chapter " data-level="2.6.1" data-path="books-02-docker-and-k8s.html">
             
-                <a href="../docker/books-02-docker-and-k8s.html">
+                <a href="books-02-docker-and-k8s.html">
             
                     
                     イラストでわかるDockerとKubernetes
@@ -399,9 +403,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.14.1" data-path="01-agile-restrospectives.html">
+        <li class="chapter " data-level="2.14.1" data-path="../books/01-agile-restrospectives.html">
             
-                <a href="01-agile-restrospectives.html">
+                <a href="../books/01-agile-restrospectives.html">
             
                     
                     01 アジャイルレトロスペクティブズ　強いチームを育てる「ふりかえり」の手引き
@@ -656,7 +660,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >01 アジャイルレトロスペクティブズ　強いチームを育てる「ふりかえり」の手引き</a>
+        <a href="../.." >Docker</a>
     </h1>
 </div>
 
@@ -671,386 +675,282 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="アジャイルレトロスペクティブズ-強いチームを育てる「ふりかえり」の手引き"><a href="https://www.amazon.co.jp/dp/B01IGW59NQ" target="_blank">アジャイルレトロスペクティブズ 強いチームを育てる「ふりかえり」の手引き</a></h1>
-<p><img src="https://m.media-amazon.com/images/I/5126tTdNK5L.jpg" alt="アジャイルレトロスペクティブズ　強いチームを育てる「ふりかえり」の手引き" width="300px"></p>
-<p><a href="https://agile.2ia.net/Agile%20Retrospectives.pdf" target="_blank">https://agile.2ia.net/Agile%20Retrospectives.pdf</a></p>
-<h2 id="rectrospectable-な環境">Rectrospectable な環境.</h2>
-<ul>
-<li>Timebox</li>
-<li>目標</li>
-<li>進め方</li>
-<li>チームの価値/約束 (どこに向かえば良いか、今後困難に向かっていく指標となる)</li>
-</ul>
-<h2 id="データを収集する">データを収集する</h2>
-<p>客観的なデータがないと個人の意見や信念が影響し過ぎてしまう。
-例えば、下記を図ること</p>
-<ul>
-<li>バーンダウンチャート</li>
-<li>ベロシティ</li>
-<li>不具合の発生数</li>
-<li>完了したストーリー数</li>
-<li>リファクタされたコード量</li>
-<li>エフォートデータ (工数などの指標)</li>
-<li>感情データ</li>
-</ul>
-<h2 id="activities">Activities</h2>
+                                <h1 id="docker">Docker</h1>
+<h2 id="command">Command</h2>
 <table>
 <thead>
 <tr>
-<th>phase</th>
-<th>activity</th>
-<th>iteration</th>
-<th>relese</th>
-<th>project</th>
-<th>sub</th>
-<th>url</th>
+<th>上流</th>
+<th>command(* .. 上流省略可能)</th>
+<th>よく使うoption</th>
+<th>説明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>場を設定する</td>
-<td>check-in</td>
-<td>x</td>
-<td></td>
-<td></td>
-<td>same</td>
-<td>　<a href="https://agilepinoy.wordpress.com/2020/02/18/everything-retrospective-check-in/" target="_blank">Ex1</a></td>
+<td>container</td>
+<td>start*</td>
+<td>-a/-i</td>
+<td>コンテナを開始する</td>
 </tr>
 <tr>
 <td></td>
-<td>focus-on/focus-off</td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td></td>
-<td><a href="http://pearllanguage.org/Focus_on_focus_off" target="_blank">wiki</a></td>
+<td>stop*</td>
+<td>-t</td>
+<td>コンテナを停止する</td>
 </tr>
 <tr>
 <td></td>
-<td>esvp</td>
-<td></td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td><a href="https://www.funretrospectives.com/esvp-explorer-shopper-vacationer-prisoner/" target="_blank">FUNRETROSPECTIVES</a></td>
+<td>create*</td>
+<td>-a/-e/-i/-p/-v</td>
+<td>Dockerイメージからコンテナを作成する</td>
 </tr>
 <tr>
 <td></td>
-<td>Working Aggreements</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td><a href="https://blog.engineer.adways.net/entry/2020/02/14/150000" target="_blank">Ex1</a></td>
+<td>run*</td>
+<td>-d</td>
+<td>Dockerイメージをダウンロードし、コンテナを作成して起動する。docker pull, docker create, docker start をまとめたコマンド.</td>
 </tr>
 <tr>
 <td></td>
-<td>Temperature Reading</td>
-<td></td>
-<td>x</td>
-<td>x</td>
-<td></td>
+<td>exec*</td>
+<td>--name/-e/-i/-t/-p/-v</td>
 <td></td>
 </tr>
 <tr>
 <td></td>
-<td>Satisfaction Histograms</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
+<td>ls</td>
 <td></td>
-<td><a href="https://www.oreilly.com/library/view/agile-retrospectives/9781680500295/f_0037.html" target="_blank">O&apos;REILLY</a></td>
-</tr>
-<tr>
-<td>データを収集する</td>
-<td>timeline</td>
-<td></td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td></td>
+<td>= docker ps<br>コンテナー一覧を表示する</td>
 </tr>
 <tr>
 <td></td>
-<td>555 (five nickels)</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-<td>無口な人とかがいる時に無理させない。</td>
-<td><a href="https://www.oreilly.com/library/view/agile-retrospectives/9781680500295/f_0033.html" target="_blank">O&apos;REILLY</a></td>
+<td>cp*</td>
+<td></td>
+<td>DockerコンテナとDockerホスト間でファイルをコピーする</td>
 </tr>
 <tr>
 <td></td>
-<td>colorcode dot</td>
+<td>commit*</td>
 <td></td>
-<td>x</td>
-<td>x</td>
-<td>感情に関するデータ</td>
-<td></td>
+<td>Dockerコンテナをイメージに変換する</td>
 </tr>
 <tr>
 <td></td>
-<td>Mad Sad Glad</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-<td>感情に関するデータ</td>
+<td>rm*</td>
 <td></td>
+<td>Dockerコンテナを削除する</td>
 </tr>
 <tr>
-<td></td>
-<td>Locate Strengths</td>
-<td></td>
-<td>x</td>
-<td>x</td>
-<td>事実と感情に関するデータ</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>Satisfaction Histograms</td>
-<td>x</td>
-<td></td>
-<td></td>
+<td>image</td>
+<td>pull*</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td></td>
-<td>Team Rader</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
+<td>search</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td></td>
-<td>like to like</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
+<td>rm</td>
 <td></td>
-<td></td>
-</tr>
-<tr>
-<td>アイデアを出す</td>
-<td>BrainStorming</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td></td>
+<td>=docker rmi</td>
 </tr>
 <tr>
 <td></td>
-<td>force field analysis</td>
+<td>ls</td>
 <td></td>
-<td>x</td>
-<td>x</td>
+<td>自分がダウンロードしたイメージ一覧を表示する</td>
+</tr>
+<tr>
+<td></td>
+<td>build*</td>
+<td></td>
+<td>Dockerイメージを作成する</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>create</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td></td>
-<td>5 whys</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
+<td>inspect</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td></td>
-<td>fish-bone diarams</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
+<td>rm</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>network</td>
+<td>create</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td></td>
-<td>pattern and shift</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
+<td>inspect</td>
 <td></td>
-<td>パターン分けのこと</td>
+<td>ネットワークの詳細を表示する</td>
 </tr>
 <tr>
 <td></td>
-<td>ドットによる優先付</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
+<td>rm</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td></td>
-<td>まとめレポート(Report Out with Synthesis)</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
+<td>connect</td>
 <td></td>
-<td></td>
+<td>コンテナをネットワークに接続する</td>
 </tr>
 <tr>
 <td></td>
-<td>テーマの特定 (Identify Themes)</td>
+<td>disconnect</td>
 <td></td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td></td>
+<td>コンテナをネットワークから切断する</td>
 </tr>
 <tr>
 <td></td>
-<td>学習マトリックス (Learning Matrix)</td>
-<td>x</td>
+<td>ls</td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>何をすべきかを決定する</td>
-<td>Retrospective Planning Game</td>
-<td></td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td></td>
+<td>ネットワークの一覧を表示する</td>
 </tr>
 <tr>
 <td></td>
-<td>SMART Goals</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
+<td>prune</td>
 <td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>Circle Questions</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>Short Subjects</td>
-<td>x</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>555</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>force field analysis</td>
-<td></td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>終了する</td>
-<td>+/Δ</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>感謝</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>Temperature Reading</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td>自分たちの立ち位置を図る</td>
-</tr>
-<tr>
-<td></td>
-<td>役立った邪魔だった仮定した</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>投資時間対効果</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>満足ヒストグラム</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>teamlader</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>学習マトリックス</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>短い話題 (KPTとか)</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-<td></td>
+<td>現在コンテナがつながっていないネットワークを全て削除する</td>
 </tr>
 </tbody>
 </table>
-<p>Working Aggreements =&gt; Team Rader</p>
+<ul>
+<li>volume
+コンテナからマウントできるストレージの操作を行う。</li>
+<li>network
+Docker同士が接続するのに使う仮想的なネットワークDockerネットワークの操作を行う。</li>
+</ul>
+<h2 id="containerとhost間でファイルをコピーする">ContainerとHost間でファイルをコピーする</h2>
+<p>docker cpを使う。</p>
+<h2 id="volumeをマウントする">Volumeをマウントする</h2>
+<p>2種類ある。</p>
+<h3 id="ボリュームマウント">ボリュームマウント</h3>
+<p>DockerEngineが管理している領域内にボリュームを作成し、ディスクとして今天谷マウントします。
+名前だけで管理できるので、手軽に扱える反面、ボリュームに対して、直接操作しづらいので、「仮で使いたい場合」、「滅多に触らないが、消してはいけないファイル」をおくのに使うことが多い。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conatiner</td>
+<td></td>
+</tr>
+<tr>
+<td>Docker Engine</td>
+<td>Mount</td>
+</tr>
+<tr>
+<td>Host OS</td>
+<td>NOT</td>
+</tr>
+</tbody>
+</table>
+<h3 id="バインドマウント">バインドマウント</h3>
+<p>DockerをインストールしたPCに存在するディレクトリをコンテナにマウントする。ファイル単位でも可能
+フォルダにたいhしてファイルもおくことができる。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conatiner</td>
+<td></td>
+</tr>
+<tr>
+<td>Docker Engine</td>
+<td>NOT</td>
+</tr>
+<tr>
+<td>Host OS</td>
+<td>Mount</td>
+</tr>
+</tbody>
+</table>
+<p><code>docker run -v [volume名]:[PATH]</code></p>
+<h2 id="コンテナーのイメージ化">コンテナーのイメージ化</h2>
+<p>Dockerfileを作る。</p>
+<h1 id="docker-compoase">docker-compoase</h1>
+<p>下記のdocker cliを一つのYAMLにまとめることができる、。</p>
+<pre><code>docker network create wordpress000net1
+</code></pre><pre><code>docker run --name mysql000ex11 -dit --net=wordpress000net1 -e MYSQL_ROOT_PASSWORD=      MYSQL_ROOT_PASSWORD: rootpass -e MYSQL_DATABASE=wordpress000db -e MYSQL_USER=szkrkr -e MYSQL_PASSWORD=pass mysql --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --default-authentication-plugin=mysql_native_password
+</code></pre><pre><code>docker run --name mysql000ex12 -dit --net=wordpress000net1 -p 8085:80 -e WORDPRESS_DB_HOST=mysql000ex11 -e WORDPRESS_DB_NAME=wordpress000db -e WORDPRESS_DB_USER=szkrkr -e WORDPRESS_DB_PASSWORD=pass wordpress
+</code></pre><p>-&gt; yml file</p>
+<pre><code>version: &quot;3&quot;
+
+services: 
+  mysql000ex11:
+    image: mysql:5.7
+    networks:
+      - wordpress000net1 
+    volumes:
+      - mysql000vol11:/var/lib/mysql
+    restart: always
+    environment: 
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: wordpress000db
+      MYSQL_USER: szkrkr
+      MYSQL_PASSWORD: pass
+  wordpress000ex12:
+    depends_on: 
+      - mysql000ex11
+    image: wordpress
+    networks: 
+      - wordpress000net1
+    volumes: 
+      - wordpress000vol12:/var/www/html
+    ports:
+      - 8085:80
+    restart: always
+    environment: 
+      WORDPRESS_DB_HOST: mysql000ex11
+      WORDPRESS_DB_NAME: wordpress000db
+      WORDPRESS_DB_USER: szkrkr
+      WORDPRESS_DB_PASSWORD: pass
+networks:
+  wordpress000net1:
+volumes:
+  mysql000vol11:
+  wordpress000vol12:
+</code></pre><h1 id="kubernetes">Kubernetes</h1>
+<h2 id="glosarry">Glosarry</h2>
+<p>Pod/Service/ReplicaSet/Deployment</p>
+<p><img src="assets/k8s-service.drawio.svg"></p>
+<ul>
+<li>podtemplate .. デプロイするときのポッドの雛形</li>
+<li>replicationcontrollers .. レプリケーションのコントローラー</li>
+<li>resourcequotas . Kubernetesのリソース使用量の聖g年を設定</li>
+<li>secrets .. 鍵情報を取得</li>
+<li>serviceaccounts .. 操作するアカウントを管理する</li>
+<li>daemonsets .. WorkerNodeごとに1つのPodを作成</li>
+<li></li>
+</ul>
 
                                 
                                 </section>
@@ -1078,6 +978,14 @@
 
             
                 
+                <a href="../ddd/" class="navigation navigation-prev " aria-label="Previous page: DDD">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="books-02-docker-and-k8s.html" class="navigation navigation-next " aria-label="Next page: イラストでわかるDockerとKubernetes">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -1086,7 +994,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"01 アジャイルレトロスペクティブズ　強いチームを育てる「ふりかえり」の手引き","level":"2.14.1","depth":2,"next":{"title":"その他","level":"2.15","depth":1,"ref":"","articles":[{"title":"ErgoDash","level":"2.15.1","depth":2,"path":"dev/other/kb-ergodash.md","ref":"./dev/other/kb-ergodash.md","articles":[]}]},"previous":{"title":"書籍","level":"2.14","depth":1,"ref":"","articles":[{"title":"01 アジャイルレトロスペクティブズ　強いチームを育てる「ふりかえり」の手引き","level":"2.14.1","depth":2,"path":"dev/books/01-agile-restrospectives.md","ref":"./dev/books/01-agile-restrospectives.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/books/01-agile-restrospectives.md","mtime":"2021-04-28T11:59:39.338Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-05-27T15:47:21.176Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Docker","level":"2.6","depth":1,"next":{"title":"イラストでわかるDockerとKubernetes","level":"2.6.1","depth":2,"path":"dev/docker/books-02-docker-and-k8s.md","ref":"./dev/docker/books-02-docker-and-k8s.md","articles":[]},"previous":{"title":"DDD","level":"2.5","depth":1,"path":"dev/ddd/index.md","ref":"./dev/ddd/index.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/docker/index.md","mtime":"2021-05-05T05:28:48.579Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-05-27T15:47:21.176Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
