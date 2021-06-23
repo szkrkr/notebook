@@ -46,4 +46,4 @@
 * [ベトナム](./hobbies/vietnam.md)
 * [南米音楽](./hobbies/nambei.md)
 * [コーヒー](./hobbies/coffee.md)
-* [ウィスキー](./hobbies/whisky.md)
+* [ウィスキー](./hobbies/whisky/index.md)
