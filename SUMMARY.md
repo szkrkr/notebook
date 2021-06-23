@@ -47,6 +47,9 @@
 * [南米音楽](./hobbies/nambei.md)
 * [コーヒー](./hobbies/coffee.md)
 * [ウィスキー](./hobbies/whisky/index.md)
+* [城(石垣)](./hobbies/ishigaki/index.md)
+* [散歩](./hobbies/sanpo/index.md)
+
 ### Other
 
 * [税金](./other/tax/index.md)
