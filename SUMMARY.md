@@ -47,3 +47,6 @@
 * [南米音楽](./hobbies/nambei.md)
 * [コーヒー](./hobbies/coffee.md)
 * [ウィスキー](./hobbies/whisky/index.md)
+### Other
+
+* [税金](./other/tax/index.md)
