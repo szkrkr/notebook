@@ -1,0 +1,141 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="606px" height="171px" viewBox="-0.5 -0.5 606 171" content="&lt;mxfile&gt;&lt;diagram id=&quot;Vmoz0ZVmdpgx3gX5ME20&quot; name=&quot;Page-1&quot;&gt;3Vjfb5swEP5rLG2TOmEgBB4hodvDJlXqw9ZHC1zwSjBznCbsr98ZzG/Sdl2UVH1JfB93Pt93Z58BWavN4YsgRfqdxzRDphEfkLVGpokNF8OfQsoasT2vBhLBYq3UAbfsD20sNbpjMd0OFCXnmWTFEIx4ntNIDjAiBN8P1e55NvRakIROgNuIZFP0B4tlWqOuuezwr5QlaeMZOzq+DWmUdSTblMR834OsEFkrwbmsR5vDimaKvIaX2u76yNN2YYLm8iUGZm3wSLKdjk2vS5ZNsILv8pgqfQNZwT5lkt4WJFJP95BewFK5yUDCMNTTUSHp4eiScBsoVAjlGypFCSraYKmp0bXRUrXvmMYLjaU9lhs9opObtDN38cNAUzBPh/X26GjjugQf9tvjw7pkfSxm+HAycBDE7HHAi/N7p/ZwMBgl+r+y2BYkb7HQRkGAfBuFC+SZyF2ZahR4KLAbfVjbwKSDK981ahoqzGsDT/IEjMthMrZS8Ae64hkXgOQ8B83gnmXZCCIZS3IQM3qvZlDZY3AW+hresDhWTmZzP6yO058O2Jtm35lJvnWC5GNrQiqNoS9okQuZ8oTnJAs7dERAp/ON80Ln4ReVstRNjuwkH2YJeBHlT2X/edGId/1n64OevJbKRjowWZthLd11k4DUmSmhb3VDBQNyqBhkTYX6dM6AGb4TkdZydV8mIqFay5vPrKAZkexxOPtcoipTXwhS9hQKznK57c18o4CuYLC9GFSMhUcdcaRvLZ/Uh0G9gq5k2lBeVEXu80cqXAoKNYx2IisDQaIHxeBzZ2tXabUkgVSuNuiVd6K9h60hNbihqrf5zJnN1x7H/7P7vClvk0PT6g5NNfCR74BJpbdG7jUKHRQYyMMoXCLfRW54+W5mjLqZfcZu1lynj7Wzf+lX1qv7FX7X/Wp8fTtrw8Kny+/r7yPmu87v+Dp61vzOvb1dZv867za/4wPaOWN+Z143oIW5HnKNKl0h8pa9XmYonfAaBSvkukpBaa5neiKYBEvdEEezmcZV1TKnbhzlw4eBhzyvKp3aEzRm49MRm2oJAazaQi5GftgtFgbw6y4/qCa0+Nj6bZ+DC1ytfuJXnahBpQy1C329pmCtXLUOT1+NERSMuhJfup/gYT0219N+PdrOYlqQr7iDgdh9iaqvut33PCv8Cw==&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="0" y="30" width="150" height="20" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+        <rect x="150" y="30" width="150" height="20" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+        <rect x="300" y="30" width="150" height="20" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+        <rect x="0" y="0" width="60" height="30" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 58px; height: 1px; padding-top: 15px; margin-left: 2px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: left; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <div>
+                                    <span>
+                                        令和2年
+                                    </span>
+                                </div>
+                                2020/01
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="2" y="19" fill="#000000" font-family="Helvetica" font-size="12px">
+                    令和2年2020/01
+                </text>
+            </switch>
+        </g>
+        <path d="M 75 68 L 75 120 L 305 120 L 305 76.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 305 71.12 L 308.5 78.12 L 305 76.37 L 301.5 78.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 85 -15 L 80 -15 Q 75 -15 75 -5 L 75 50 Q 75 60 70 60 L 67.5 60 Q 65 60 70 60 L 72.5 60 Q 75 60 75 70 L 75 125 Q 75 135 80 135 L 85 135" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(-90,75,60)" pointer-events="all"/>
+        <rect x="230" y="50" width="150" height="20" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 148px; height: 1px; padding-top: 60px; margin-left: 231px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                令和3年度 住民税
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="305" y="64" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    令和3年度 住民税
+                </text>
+            </switch>
+        </g>
+        <rect x="150" y="0" width="60" height="30" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 58px; height: 1px; padding-top: 15px; margin-left: 152px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: left; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <div>
+                                    <span>
+                                        令和3年
+                                    </span>
+                                </div>
+                                2021/01
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="152" y="19" fill="#000000" font-family="Helvetica" font-size="12px">
+                    令和3年2021/01
+                </text>
+            </switch>
+        </g>
+        <rect x="300" y="0" width="60" height="30" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 58px; height: 1px; padding-top: 15px; margin-left: 302px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: left; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <div>
+                                    <span>
+                                        令和2年
+                                    </span>
+                                </div>
+                                2022/01
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="302" y="19" fill="#000000" font-family="Helvetica" font-size="12px">
+                    令和2年2022/01
+                </text>
+            </switch>
+        </g>
+        <rect x="230" y="70" width="60" height="30" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 58px; height: 1px; padding-top: 85px; margin-left: 232px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: left; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <div>
+                                    <span>
+                                        令和3年
+                                    </span>
+                                </div>
+                                2021/06
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="232" y="89" fill="#000000" font-family="Helvetica" font-size="12px">
+                    令和3年2021/06
+                </text>
+            </switch>
+        </g>
+        <rect x="140" y="120" width="465" height="50" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 463px; height: 1px; padding-top: 145px; margin-left: 141px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                所得税 =（前年度総所得 - 所得控除） * 所得割の税率(10%) - 税額控除 + 均等割
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="373" y="149" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    所得税 =（前年度総所得 - 所得控除） * 所得割の税率(10%) - 税額控除 + 均等割
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Viewer does not support full SVG 1.1
+            </text>
+        </a>
+    </switch>
+</svg>
