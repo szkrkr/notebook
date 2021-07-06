@@ -49,6 +49,7 @@
 * [ウィスキー](./hobbies/whisky/index.md)
 * [城(石垣)](./hobbies/ishigaki/index.md)
 * [散歩](./hobbies/sanpo/index.md)
+* [ご飯](./hobbies/cook/index.md)
 
 ### Other
 

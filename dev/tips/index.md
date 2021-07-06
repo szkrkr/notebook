@@ -17,6 +17,8 @@ https://medium.com/@matt.leo/how-to-import-lodash-to-chrome-console-3e5e30b4933e
   </p>
 </details>
 
+* use `%28` instead of `(`, `%29` instead of `)` when you use `()` link syntax.
+
 # Raspberry-Pi
 * https://eikihaya.hatenablog.com/entry/20170727/1501121212
 
@@ -35,3 +37,4 @@ adsf内の場合は、｀.asdf/installs/nodejs/15.10.0/.npm/bin｀ とかにな�
   -> clear screen but previous command is remmaining if you scroll.
 * % reset
   -> clear screen with previous command.
+

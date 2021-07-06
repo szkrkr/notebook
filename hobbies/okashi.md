@@ -13,7 +13,7 @@ Galletes..丸くて平たい形をしたお菓子の総称
 
 
 ### メレンゲを使った焼き菓子
-(メレンゲ (菓子) Wiki)[https://ja.wikipedia.org/wiki/%E3%83%A1%E3%83%AC%E3%83%B3%E3%82%B2_(%E8%8F%93%E5%AD%90)]
+[メレンゲ (菓子) Wiki](https://ja.wikipedia.org/wiki/%E3%83%A1%E3%83%AC%E3%83%B3%E3%82%B2_%28%E8%8F%93%E5%AD%90%29)
 * Dacquoise ダックワーズ  
 ダコワーズを元に、1979年 日本人の三嶋隆夫が考案。
 https://www.16ku.jp/dux.html
