@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Google Analytics · HonKit</title>
+        <title>テスト関連 · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.6.17">
@@ -66,10 +66,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../project/" />
+    <link rel="next" href="capacity-planning.html" />
     
     
-    <link rel="prev" href="../firebase/firebase-project.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -331,9 +331,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.12" data-path="./">
+        <li class="chapter " data-level="2.12" data-path="../ga/">
             
-                <a href="./">
+                <a href="../ga/">
             
                     
                     Google Analytics
@@ -389,9 +389,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.14" data-path="../quality/">
+        <li class="chapter " data-level="2.14" data-path="./">
             
-                <a href="../quality/">
+                <a href="./">
             
                     
                     品質
@@ -403,9 +403,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.14.1" data-path="../quality/testing.html">
+        <li class="chapter active" data-level="2.14.1" data-path="testing.html">
             
-                <a href="../quality/testing.html">
+                <a href="testing.html">
             
                     
                     テスト関連
@@ -416,9 +416,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.14.2" data-path="../quality/capacity-planning.html">
+        <li class="chapter " data-level="2.14.2" data-path="capacity-planning.html">
             
-                <a href="../quality/capacity-planning.html">
+                <a href="capacity-planning.html">
             
                     
                     キャパシティプランニング
@@ -764,7 +764,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Google Analytics</a>
+        <a href="../.." >テスト関連</a>
     </h1>
 </div>
 
@@ -779,10 +779,95 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="googleanalytics関連">GoogleAnalytics関連</h1>
-<h2 id="memo">MEMO:</h2>
-<h3 id="reactアプリケーション内でgtagjsを使って、google-analytics">Reactアプリケーション内でgtag.jsを使って、Google Analytics</h3>
-<p><a href="https://note.com/dd_techblog/n/n29535fd4f557" target="_blank">https://note.com/dd_techblog/n/n29535fd4f557</a></p>
+                                <h1 id="テスト関連">テスト関連</h1>
+<h2 id="left-shiftする">Left Shiftする</h2>
+<p>システムテストのケースを膨らませるよりも、単体テスト多くしよう。
+そのためにはTDDすべし。 <sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
+<h1 id="単体テスト">単体テスト</h1>
+<h2 id="テストすべきは">テストすべきは?</h2>
+<ul>
+<li>境界値テスト</li>
+<li>状態遷移テスト</li>
+</ul>
+<p>高橋さん的にはこれで80%のバグは潰せるらしい。</p>
+<h2 id="カバレッジの指標はどれくらい">カバレッジの指標はどれくらい?</h2>
+<p>Googleでの指標<sup><a href="#fn_4" id="reffn_4">4</a></sup></p>
+<blockquote>
+<p>60%: 許容範囲 (acceptable)
+75%: 推奨 (Commendable)
+90%: 模範的 (exemplary)</p>
+</blockquote>
+<p>(鈴木意見: 100%目指しても良くなるとは限らない. 75%くらいが良さそうだね)</p>
+<h2 id="単体テストを部分的に反映させていくにあたっての話題">単体テストを部分的に反映させていくにあたっての話題</h2>
+<p>高橋さんの意見 <sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
+<ul>
+<li>複雑度と、Hot Spot数、ファイルの行数で、バグが多そうな部分を検討し、そこに対し単体テストを追加したりフィファクタリングする。
+(鈴木意見: HotSpotは現行プロジェクトだと、うまく出なさそう。)</li>
+<li>複雑度の計算は、McCabe数(Cyclomatic Complexity)を参照する</li>
+<li>クラスに対する測定はCKメトリクス(特にWMC)を利用する。</li>
+</ul>
+<h3 id="mccabe数に関して">McCabe数に関して</h3>
+<h4 id="算出">算出</h4>
+<p><code>C = e - n + 2</code>
+C: Complexity. 複雑度
+e: プログラムが含むnを繋ぐブロック(アーク)の総数
+n: プログラムが含む分岐点、合流点の総数</p>
+<h4 id="基準">基準</h4>
+<ul>
+<li>10以下が望ましい <sup><a href="#fn_5" id="reffn_5">5</a></sup></li>
+<li>20以下で運用している <sup><a href="#fn_1" id="reffn_1">1</a></sup></li>
+<li>30超えるとバグが増える</li>
+<li>50を超えるとテスト困難</li>
+</ul>
+<h3 id="hot-spotのscoreに関して">Hot SpotのScoreに関して</h3>
+<p>簡単に言うと、頻繁に実装されている。
+算出法は下記 <sup><a href="#fn_2" id="reffn_2">2</a></sup> <sup><a href="#fn_3" id="reffn_3">3</a></sup></p>
+<p><code>Score = Σ[i=0→n]1/(1＋exp^(-12×ti＋12))</code></p>
+<blockquote>
+<p>nは、コードに対してバグフィックスが行われた回数を示します。
+tiは修正が行われた時点のタイムスタンプで、コードが生成されたときを0、現在を1と置いて、その間の少数値をとります。
+つまり、12月1日にコードを書き始め、今日が12月30日であるとすると、15日にバグフィクスをしたらti＝0.5になります。
+ti＝0のとき、1/(1＋exp(－12×ti＋12))≒0 となり、
+ti＝1のとき、1/(1＋exp(－12×ti＋12))＝0.5 となります。</p>
+</blockquote>
+<h3 id="ckメトリクス特にwmcに関して">CKメトリクス(特にWMC)に関して</h3>
+<p>CKメトリクスは、複雑者を示す6つのメトリクスの集合。</p>
+<ul>
+<li>WMC(Weighted Methods per Class)</li>
+<li>DIT(Depth of Inheritance Tree)</li>
+<li>NOC(Number Of Children of a class)</li>
+<li>CBO(Coupling Between Object classes)</li>
+<li>RFC(Response For a Class)</li>
+<li>LCO(Lack of Cohesion in Methods)</li>
+</ul>
+<p>中でも WMCが利用しやすいため、それについて下記記載。</p>
+<h4 id="算出">算出</h4>
+<p><code>WMC(C) = Σ[i=0→n]ci</code></p>
+<p>計測対象クラス C が，メソッド M1,…,Mn を持つとする．これらのメソッドの複雑度
+をそれぞれ c1,…,cn とする。メソッドの複雑度の具体的な算出方法は述べられていないが, McCabe のサイクロマチック数などを用いる方法が考えられる．</p>
+<h4 id="基準">基準</h4>
+<ul>
+<li>大きいほど保守性が低い。</li>
+<li>高橋さんの意見としては、20以下であるべき。 <sup><a href="#fn_1" id="reffn_1">1</a></sup></li>
+</ul>
+<h3 id="リファクタリング">リファクタリング</h3>
+<p>すでに大きくなりすぎたファイルがある時のリファクタリングに関しては下記を参照すること。</p>
+<p><img src="assets/how-refactoring.drawio.png"></p>
+<blockquote id="fn_1">
+<sup>1</sup>. <a href="https://www.amazon.co.jp/dp/B08TBD3LSS/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1" target="_blank">高橋 寿一,『ソフトウェア品質を高める開発者テスト アジャイル時代の実践的・効率的なテストのやり方』,翔泳社 ,2021/3/17</a><a href="#reffn_1" title="Jump back to footnote [1] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_2">
+<sup>2</sup>. <a href="http://google-engtools.blogspot.com/2011/12/bug-prediction-at-google.html" target="_blank">Google Engineering Tools, Bug Prediction at Google, 2021/07/11</a><a href="#reffn_2" title="Jump back to footnote [2] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_3">
+<sup>3</sup>. <a href="https://www.publickey1.jp/blog/11/post_193.html" target="_blank">Publickey, グーグルはコードの品質向上のため「バグ予測アルゴリズム」を採用している, 2021/07/11</a><a href="#reffn_3" title="Jump back to footnote [3] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_4">
+<sup>4</sup>. <a href="https://testing.googleblog.com/2020/08/code-coverage-best-practices.html" target="_blank">Google Testing Blog, Code Coverage Best Practices, 2020/08/07/, 2021/7/11</a><a href="#reffn_4" title="Jump back to footnote [4] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_5">
+<sup>5</sup>. Watson, A.H. and McCabe, T. J., &quot;Structured TEsting : A Testing Methodology Using the Cyclomatic COmplexity Metcic&quot;, Vol.500-235, Aug. 1996<a href="#reffn_5" title="Jump back to footnote [5] in the text."> ↩</a>
+</blockquote>
 
                                 
                                 </section>
@@ -810,12 +895,12 @@
 
             
                 
-                <a href="../firebase/firebase-project.html" class="navigation navigation-prev " aria-label="Previous page: Firebase Project">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 品質">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../project/" class="navigation navigation-next " aria-label="Next page: プロジェクト進行関連">
+                <a href="capacity-planning.html" class="navigation navigation-next " aria-label="Next page: キャパシティプランニング">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -826,7 +911,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Google Analytics","level":"2.12","depth":1,"next":{"title":"プロジェクト進行関連","level":"2.13","depth":1,"path":"dev/project/index.md","ref":"./dev/project/index.md","articles":[{"title":"プロセス","level":"2.13.1","depth":2,"path":"dev/project/process.md","ref":"./dev/project/process.md","articles":[]},{"title":"立ち上げ時","level":"2.13.2","depth":2,"path":"dev/project/launch.md","ref":"./dev/project/launch.md","articles":[]}]},"previous":{"title":"Firebase Project","level":"2.11.1","depth":2,"path":"dev/firebase/firebase-project.md","ref":"./dev/firebase/firebase-project.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/ga/index.md","mtime":"2021-03-17T13:22:16.735Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-07-11T06:05:39.693Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"テスト関連","level":"2.14.1","depth":2,"next":{"title":"キャパシティプランニング","level":"2.14.2","depth":2,"path":"dev/quality/capacity-planning.md","ref":"dev/quality/capacity-planning.md","articles":[]},"previous":{"title":"品質","level":"2.14","depth":1,"path":"dev/quality/index.md","ref":"dev/quality/index.md","articles":[{"title":"テスト関連","level":"2.14.1","depth":2,"path":"dev/quality/testing.md","ref":"dev/quality/testing.md","articles":[]},{"title":"キャパシティプランニング","level":"2.14.2","depth":2,"path":"dev/quality/capacity-planning.md","ref":"dev/quality/capacity-planning.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/quality/testing.md","mtime":"2021-07-11T06:05:15.935Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-07-11T06:05:39.693Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
