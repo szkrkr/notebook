@@ -38,3 +38,7 @@ adsf内の場合は、｀.asdf/installs/nodejs/15.10.0/.npm/bin｀ とかにな�
 * % reset
   -> clear screen with previous command.
 
+# 参考文献に関して
+
+https://www.komazawa-u.ac.jp/~kazov/Nis/lecture/seminar/references.html
+

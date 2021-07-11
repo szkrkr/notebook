@@ -22,6 +22,9 @@
 * [プロジェクト進行関連](./dev/project/index.md)
   * [プロセス](./dev/project/process.md)
   * [立ち上げ時](./dev/project/launch.md)
+* [品質](dev/quality/index.md)
+  * [テスト関連](dev/quality/testing.md)
+  * [キャパシティプランニング](dev/quality/capacity-planning.md)
 * 書籍
   * [01 アジャイルレトロスペクティブズ　強いチームを育てる「ふりかえり」の手引き](./dev/books/01-agile-restrospectives.md)
   
