@@ -15,7 +15,10 @@
   * [2021.03](https://yamap.com/activities/10396874)
 * 赤城山@群馬
   * [2021.04](https://yamap.com/activities/10630540)
-
+* 湘南平
+  * [2021.04](https://yamap.com/activities/10912208)
+* 大山@神奈川
+  * [2021.05](https://yamap.com/activities/11357810)
 # 行きたい山
 
 * 3月
