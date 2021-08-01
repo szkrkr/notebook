@@ -8,8 +8,9 @@
 * [Java](./dev/java/index.md)
 * [SQL Server](./dev/db-sql-server/index.md)
 * [DDD](./dev/ddd/index.md)
-* [Docker](./dev/docker/index.md)
-  * [イラストでわかるDockerとKubernetes](./dev/docker/books-02-docker-and-k8s.md)
+* DockerとKubernetes
+  * [Docker](./dev/docker/docker.md)
+  * [Kubernetes](./dev/docker/k8s.md)
 * [React Redux](./dev/react-redux/index.md)
   * [React](dev/react-redux/react.md)
   * [Redux](dev/react-redux/redux.md)
