@@ -1,0 +1,1386 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Docker · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5T5SMRWCW9"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-5T5SMRWCW9');
+        </script>
+        <!-- use google chart -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="k8s.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Dev</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../azure/">
+            
+                <a href="../azure/">
+            
+                    
+                    Azure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../cs/">
+            
+                <a href="../cs/">
+            
+                    
+                    C#
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../java/">
+            
+                <a href="../java/">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../db-sql-server/">
+            
+                <a href="../db-sql-server/">
+            
+                    
+                    SQL Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../ddd/">
+            
+                <a href="../ddd/">
+            
+                    
+                    DDD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" >
+            
+                <span>
+            
+                    
+                    DockerとKubernetes
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.6.1" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="k8s.html">
+            
+                <a href="k8s.html">
+            
+                    
+                    Kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../react-redux/">
+            
+                <a href="../react-redux/">
+            
+                    
+                    React Redux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="../react-redux/react.html">
+            
+                <a href="../react-redux/react.html">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="../react-redux/redux.html">
+            
+                <a href="../react-redux/redux.html">
+            
+                    
+                    Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../vue/">
+            
+                <a href="../vue/">
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../jsts/">
+            
+                <a href="../jsts/">
+            
+                    
+                    JS/TS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../github-pages/">
+            
+                <a href="../github-pages/">
+            
+                    
+                    Github Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../firebase/">
+            
+                <a href="../firebase/">
+            
+                    
+                    Firebase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.11.1" data-path="../firebase/firebase-project.html">
+            
+                <a href="../firebase/firebase-project.html">
+            
+                    
+                    Firebase Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../ga/">
+            
+                <a href="../ga/">
+            
+                    
+                    Google Analytics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../project/">
+            
+                <a href="../project/">
+            
+                    
+                    プロジェクト進行関連
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.13.1" data-path="../project/process.html">
+            
+                <a href="../project/process.html">
+            
+                    
+                    プロセス
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13.2" data-path="../project/launch.html">
+            
+                <a href="../project/launch.html">
+            
+                    
+                    立ち上げ時
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../quality/">
+            
+                <a href="../quality/">
+            
+                    
+                    品質
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.14.1" data-path="../quality/testing.html">
+            
+                <a href="../quality/testing.html">
+            
+                    
+                    テスト関連
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14.2" data-path="../quality/capacity-planning.html">
+            
+                <a href="../quality/capacity-planning.html">
+            
+                    
+                    キャパシティプランニング
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" >
+            
+                <span>
+            
+                    
+                    書籍
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.15.1" data-path="../books/01-agile-restrospectives.html">
+            
+                <a href="../books/01-agile-restrospectives.html">
+            
+                    
+                    01 アジャイルレトロスペクティブズ　強いチームを育てる「ふりかえり」の手引き
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" >
+            
+                <span>
+            
+                    
+                    その他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.16.1" data-path="../other/kb-ergodash.html">
+            
+                <a href="../other/kb-ergodash.html">
+            
+                    
+                    ErgoDash
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="../tips/">
+            
+                <a href="../tips/">
+            
+                    
+                    TIPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Design</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../design/guideline/">
+            
+                <a href="../../design/guideline/">
+            
+                    
+                    ガイドライン
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Marketing</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../marketing/subscriptions/">
+            
+                <a href="../../marketing/subscriptions/">
+            
+                    
+                    サブスクリプション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../marketing/bzmodels/">
+            
+                <a href="../../marketing/bzmodels/">
+            
+                    
+                    ビジネスモデル
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hobbies</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../hobbies/onsen.html">
+            
+                <a href="../../hobbies/onsen.html">
+            
+                    
+                    温泉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../hobbies/yakimono.html">
+            
+                <a href="../../hobbies/yakimono.html">
+            
+                    
+                    やきもの
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../hobbies/yamanobori.html">
+            
+                <a href="../../hobbies/yamanobori.html">
+            
+                    
+                    山
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../../hobbies/okashi.html">
+            
+                <a href="../../hobbies/okashi.html">
+            
+                    
+                    お菓子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../../hobbies/vietnam.html">
+            
+                <a href="../../hobbies/vietnam.html">
+            
+                    
+                    ベトナム
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../../hobbies/nambei.html">
+            
+                <a href="../../hobbies/nambei.html">
+            
+                    
+                    南米音楽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../../hobbies/coffee.html">
+            
+                <a href="../../hobbies/coffee.html">
+            
+                    
+                    コーヒー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="../../hobbies/whisky/">
+            
+                <a href="../../hobbies/whisky/">
+            
+                    
+                    ウィスキー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="../../hobbies/ishigaki/">
+            
+                <a href="../../hobbies/ishigaki/">
+            
+                    
+                    城(石垣)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="../../hobbies/sanpo/">
+            
+                <a href="../../hobbies/sanpo/">
+            
+                    
+                    散歩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="../../hobbies/cook/">
+            
+                <a href="../../hobbies/cook/">
+            
+                    
+                    ご飯
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Other</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../other/tax/">
+            
+                <a href="../../other/tax/">
+            
+                    
+                    税金
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Docker</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="docker">Docker</h1>
+<h2 id="概要">概要</h2>
+<h3 id="そもそもコンテナ技術の特徴とは">そもそもコンテナ技術の特徴とは</h3>
+<ul>
+<li>軽量な実行環境</li>
+<li>高いポータビリティ<ul>
+<li>ポータビリティとは<ul>
+<li>コンテナイメージの軽量さとその挙動の再現性の高さ</li>
+<li>業界標準仕様によるコンテナへの統一的な操作方法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>巨大なエコシステム
+OSSがすごい. Docker, Kubernetes.</li>
+</ul>
+<h3 id="dockerアーキテクチャ">Dockerアーキテクチャ</h3>
+<p><img src="assets/docker-architecture.drawio.svg" alt="DockerArchitecture"></p>
+<h2 id="dockerの実行">Dockerの実行</h2>
+<h3 id="command">Command</h3>
+<table>
+<thead>
+<tr>
+<th>上流</th>
+<th>command(* .. 上流省略可能)</th>
+<th>よく使うoption</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>container</td>
+<td>start*</td>
+<td>-a/-i</td>
+<td>コンテナを開始する</td>
+</tr>
+<tr>
+<td></td>
+<td>stop*</td>
+<td>-t</td>
+<td>コンテナを停止する</td>
+</tr>
+<tr>
+<td></td>
+<td>create*</td>
+<td>-a/-e/-i/-p/-v</td>
+<td>Dockerイメージからコンテナを作成する</td>
+</tr>
+<tr>
+<td></td>
+<td>run*</td>
+<td>-d</td>
+<td>Dockerイメージをダウンロードし、コンテナを作成して起動する。docker pull, docker create, docker start をまとめたコマンド.</td>
+</tr>
+<tr>
+<td></td>
+<td>exec*</td>
+<td>--name/-e/-i/-t/-p/-v</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>ls</td>
+<td></td>
+<td>= docker ps<br>コンテナー一覧を表示する</td>
+</tr>
+<tr>
+<td></td>
+<td>cp*</td>
+<td></td>
+<td>DockerコンテナとDockerホスト間でファイルをコピーする</td>
+</tr>
+<tr>
+<td></td>
+<td>commit*</td>
+<td></td>
+<td>Dockerコンテナをイメージに変換する</td>
+</tr>
+<tr>
+<td></td>
+<td>rm*</td>
+<td></td>
+<td>Dockerコンテナを削除する</td>
+</tr>
+<tr>
+<td>image</td>
+<td>pull*</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>search</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>rm</td>
+<td></td>
+<td>=docker rmi</td>
+</tr>
+<tr>
+<td></td>
+<td>ls</td>
+<td></td>
+<td>自分がダウンロードしたイメージ一覧を表示する</td>
+</tr>
+<tr>
+<td></td>
+<td>build*</td>
+<td></td>
+<td>Dockerイメージを作成する</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>create</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>inspect</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>rm</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>network</td>
+<td>create</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>inspect</td>
+<td></td>
+<td>ネットワークの詳細を表示する</td>
+</tr>
+<tr>
+<td></td>
+<td>rm</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>connect</td>
+<td></td>
+<td>コンテナをネットワークに接続する</td>
+</tr>
+<tr>
+<td></td>
+<td>disconnect</td>
+<td></td>
+<td>コンテナをネットワークから切断する</td>
+</tr>
+<tr>
+<td></td>
+<td>ls</td>
+<td></td>
+<td>ネットワークの一覧を表示する</td>
+</tr>
+<tr>
+<td></td>
+<td>prune</td>
+<td></td>
+<td>現在コンテナがつながっていないネットワークを全て削除する</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>volume
+コンテナからマウントできるストレージの操作を行う。</li>
+<li>network
+Docker同士が接続するのに使う仮想的なネットワークDockerネットワークの操作を行う。</li>
+<li>ContainerとHost間でファイルをコピーする
+docker cpを使う。</li>
+</ul>
+<h3 id="volumeのマウントに関して">Volumeのマウントに関して</h3>
+<p>2種類ある。</p>
+<h4 id="ボリュームマウント">ボリュームマウント</h4>
+<p>DockerEngineが管理している領域内にボリュームを作成し、ディスクとして今天谷マウントします。
+名前だけで管理できるので、手軽に扱える反面、ボリュームに対して、直接操作しづらいので、「仮で使いたい場合」、「滅多に触らないが、消してはいけないファイル」をおくのに使うことが多い。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conatiner</td>
+<td></td>
+</tr>
+<tr>
+<td>Docker Engine</td>
+<td>Mount</td>
+</tr>
+<tr>
+<td>Host OS</td>
+<td>NOT</td>
+</tr>
+</tbody>
+</table>
+<h4 id="バインドマウント">バインドマウント</h4>
+<p>DockerをインストールしたPCに存在するディレクトリをコンテナにマウントする。ファイル単位でも可能
+フォルダにたいhしてファイルもおくことができる。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conatiner</td>
+<td></td>
+</tr>
+<tr>
+<td>Docker Engine</td>
+<td>NOT</td>
+</tr>
+<tr>
+<td>Host OS</td>
+<td>Mount</td>
+</tr>
+</tbody>
+</table>
+<p><code>docker run -v [volume名]:[PATH]</code></p>
+<h2 id="コンテナーのイメージ化">コンテナーのイメージ化</h2>
+<p>Dockerfileを作る。</p>
+<h3 id="build-ship-run-の実践">Build, Ship, Run の実践</h3>
+<pre><code class="lang-sh">% <span class="hljs-built_in">cd</span> dev/docker/assets/samples/myimage 
+% ls
+% cat &lt;&lt;<span class="hljs-string">EOF &gt;  hello.sh
+heredoc&gt; #!/bin/bash
+heredoc&gt; echo &quot;Hello, World!&quot;
+heredoc&gt; exec sleep infinity
+heredoc&gt; EOF</span>
+% chmod +x hello.sh 
+% cat &lt;&lt;<span class="hljs-string">EOF &gt;  Dockerfile
+heredoc&gt; FROM ubuntu:20.04
+heredoc&gt; COPY ./hello.sh /hello.sh
+heredoc&gt; ENTRYPOINT [ &quot;/hello.sh&quot; ]
+heredoc&gt; EOF</span>
+% docker build -t myimage:v1 .   
+Sending build context to Docker daemon  3.072kB
+Step 1/3 : FROM ubuntu:20.04
+20.04: Pulling from library/ubuntu
+345e3491a907: Pull complete 
+57671312ef6f: Pull complete 
+5e9250ddb7d0: Pull complete 
+Digest: sha256:cf31af331f38d1d7158470e095b132acd126a7180a54f263d386da88eb681d93
+Status: Downloaded newer image <span class="hljs-keyword">for</span> ubuntu:20.04
+ ---&gt; 7e0aa2d69a15
+Step 2/3 : COPY ./hello.sh /hello.sh
+ ---&gt; 8a968d611aad
+Step 3/3 : ENTRYPOINT [ <span class="hljs-string">&quot;/hello.sh&quot;</span> ]
+ ---&gt; Running <span class="hljs-keyword">in</span> d3a43a91fd8d
+Removing intermediate container d3a43a91fd8d
+ ---&gt; c17a675837ad
+Successfully built c17a675837ad
+Successfully tagged myimage:v1
+% docker run myimage:v1
+Hello, World!
+% docker image ls
+REPOSITORY                           TAG                                                     IMAGE ID       CREATED         SIZE
+myimage                              v1                                                      c17a675837ad   5 minutes ago   72.7MB
+% docker tag myimage:v1 szkrkr/myimage:v1
+% docker push szkrkr/myimage:v1
+The push refers to repository [docker.io/szkrkr/myimage]
+8833c0329e1a: Pushed 
+2f140462f3bc: Mounted from library/ubuntu 
+63c99163f472: Mounted from library/ubuntu 
+ccdbb80308cc: Mounted from library/ubuntu 
+v1: digest: sha256:bfdbf07b41369ca5e0aa4929e4be4913c9ddb83ac25930027dc336d52ba733f6 size: 1150
+% docker pull szkrkr/myimage:v1
+v1: Pulling from szkrkr/myimage
+Digest: sha256:bfdbf07b41369ca5e0aa4929e4be4913c9ddb83ac25930027dc336d52ba733f6
+Status: Image is up to date <span class="hljs-keyword">for</span> szkrkr/myimage:v1
+docker.io/szkrkr/myimage:v1
+% docker run szkrkr/myimage:v1 
+Hello, World!
+</code></pre>
+<h2 id="docker-compoase">docker-compoase</h2>
+<p>下記のdocker cliを一つのYAMLにまとめることができる、。</p>
+<pre><code>docker network create wordpress000net1
+</code></pre><pre><code>docker run --name mysql000ex11 -dit --net=wordpress000net1 -e MYSQL_ROOT_PASSWORD=      MYSQL_ROOT_PASSWORD: rootpass -e MYSQL_DATABASE=wordpress000db -e MYSQL_USER=szkrkr -e MYSQL_PASSWORD=pass mysql --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --default-authentication-plugin=mysql_native_password
+</code></pre><pre><code>docker run --name mysql000ex12 -dit --net=wordpress000net1 -p 8085:80 -e WORDPRESS_DB_HOST=mysql000ex11 -e WORDPRESS_DB_NAME=wordpress000db -e WORDPRESS_DB_USER=szkrkr -e WORDPRESS_DB_PASSWORD=pass wordpress
+</code></pre><p>-&gt; yml file</p>
+<pre><code>version: &quot;3&quot;
+
+services: 
+  mysql000ex11:
+    image: mysql:5.7
+    networks:
+      - wordpress000net1 
+    volumes:
+      - mysql000vol11:/var/lib/mysql
+    restart: always
+    environment: 
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: wordpress000db
+      MYSQL_USER: szkrkr
+      MYSQL_PASSWORD: pass
+  wordpress000ex12:
+    depends_on: 
+      - mysql000ex11
+    image: wordpress
+    networks: 
+      - wordpress000net1
+    volumes: 
+      - wordpress000vol12:/var/www/html
+    ports:
+      - 8085:80
+    restart: always
+    environment: 
+      WORDPRESS_DB_HOST: mysql000ex11
+      WORDPRESS_DB_NAME: wordpress000db
+      WORDPRESS_DB_USER: szkrkr
+      WORDPRESS_DB_PASSWORD: pass
+networks:
+  wordpress000net1:
+volumes:
+  mysql000vol11:
+  wordpress000vol12:
+</code></pre><h2 id="コンテナイメージ">コンテナイメージ</h2>
+<h3 id="コンテナイメージ解剖">コンテナイメージ解剖</h3>
+<table>
+<thead>
+<tr>
+<th>どんなデータがで構成されているか</th>
+<th>ファイル名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>コンテナが用いるルートファイルシステムのデータ</td>
+<td>layer.tar</td>
+</tr>
+<tr>
+<td>実行コマンドや環境変数など、実行環境を再現するための情報</td>
+<td>c17a.....1144f.json</td>
+</tr>
+<tr>
+<td>イメージの構成などに関する情報</td>
+<td>manifest.json, repositories</td>
+</tr>
+<tr>
+<td>その他（過去の仕様との互換性のために保持されるファイル群)</td>
+<td>VESION, json</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-sh">% docker save szkrkr/myimage:v1 | tar -xC ./dumpimage
+% tree ./dumpimage
+./dumpimage
+├── 1392a7609ae8d845eba5fbe95e266a6b104d55b30262a284c960583f91307420
+│   ├── VERSION
+│   ├── json
+│   └── layer.tar
+├── 15cbe1c29902a1020a4a47c835a82f0416f1896f02fac942fdd35d326c63fa22
+│   ├── VERSION
+│   ├── json
+│   └── layer.tar
+├── 20f79c86180273e5ac0f522f4fd6a333f210784f0865dbaf020877d549bc4f8d
+│   ├── VERSION
+│   ├── json
+│   └── layer.tar
+├── 6d56becb66b184f78b25f61dc91f68fcfce4baeecb3a8dcb21ada2306091aab7
+│   ├── VERSION
+│   ├── json
+│   └── layer.tar
+├── c17a675837adfca54876833c67a451e85d0c4f502c78eae847fc52b9faa1144f.json
+├── manifest.json
+└── repositories
+
+4 directories, 15 files
+szkrkr@suzukirokurounoMacBook-Pro-2 myimage % tar --list -f ./dumpimage/1392a7609ae8d845eba5fbe95e266a6b104d55b30262a284c960583f91307420/layer.tar | head -n 10
+run/
+run/systemd/
+run/systemd/.wh..wh..opq
+run/systemd/container
+szkrkr@suzukirokurounoMacBook-Pro-2 myimage % tar --list -f ./dumpimage/15cbe1c29902a1020a4a47c835a82f0416f1896f02fac942fdd35d326c63fa22/layer.tar | head -n 1
+bin
+szkrkr@suzukirokurounoMacBook-Pro-2 myimage % tar --list -f ./dumpimage/20f79c86180273e5ac0f522f4fd6a333f210784f0865dbaf020877d549bc4f8d/layer.tar | head -n 1
+hello.sh
+szkrkr@suzukirokurounoMacBook-Pro-2 myimage % tar --list -f ./dumpimage/6d56becb66b184f78b25f61dc91f68fcfce4baeecb3a8dcb21ada2306091aab7/layer.tar | head -n 1
+etc/
+</code></pre>
+<h3 id="レイヤとコンテナ実行">レイヤとコンテナ実行</h3>
+<p>CoWを知る。
+　　
+<img src="assets/layer-image-when-container-running.drawio.svg" alt="CoW"></p>
+<h3 id="レイヤとビルド">レイヤとビルド</h3>
+<p>すでに同じイメージでビルドされている場合、キャッシュされる。</p>
+<pre><code>szkrkr@suzukirokurounoMacBook-Pro-2 hello % docker build -t hello:v1 .      
+Sending build context to Docker daemon  3.072kB
+Step 1/5 : FROM ubuntu:20.04
+ ---&gt; 7e0aa2d69a15
+Step 2/5 : RUN apt-get update
+ ---&gt; Running in bcc8dc051cdb
+  :
+ ---&gt; 634f8b8d5ab3
+Step 3/5 : RUN apt-get install -y figlet
+ ---&gt; Running in f564cfbe6662
+  :
+ ---&gt; c83131622fd1
+Step 4/5 : COPY ./hello.sh /hello.sh
+ ---&gt; ef604fed0f57
+Step 5/5 : ENTRYPOINT [ &quot;/hello.sh&quot; ]
+ ---&gt; Running in a39beb43ef3a
+Removing intermediate container a39beb43ef3a
+ ---&gt; 23f3fe28a651
+Successfully built 23f3fe28a651
+Successfully tagged hello:v1
+szkrkr@suzukirokurounoMacBook-Pro-2 hello % docker run --rm --name=helo1 hello:v1
+ _   _      _ _         __        __         _     _ _ 
+| | | | ___| | | ___    \ \      / /__  _ __| | __| | |
+| |_| |/ _ \ | |/ _ \    \ \ /\ / / _ \| &apos;__| |/ _` | |
+|  _  |  __/ | | (_) |    \ V  V / (_) | |  | | (_| |_|
+|_| |_|\___|_|_|\___( )    \_/\_/ \___/|_|  |_|\__,_(_)
+szkrkr@suzukirokurounoMacBook-Pro-2 samples % cd ..
+szkrkr@suzukirokurounoMacBook-Pro-2 samples % cp -r hello hello2
+szkrkr@suzukirokurounoMacBook-Pro-2 samples % vi ./hello2/hello.sh
+szkrkr@suzukirokurounoMacBook-Pro-2 samples % docker build -t hello:v2 ./hello2
+Sending build context to Docker daemon  3.072kB
+Step 1/5 : FROM ubuntu:20.04
+ ---&gt; 7e0aa2d69a15
+Step 2/5 : RUN apt-get update
+ ---&gt; Using cache
+ ---&gt; 634f8b8d5ab3
+Step 3/5 : RUN apt-get install -y figlet
+ ---&gt; Using cache
+ ---&gt; c83131622fd1
+Step 4/5 : COPY ./hello.sh /hello.sh
+ ---&gt; 95bb577eb37f
+Step 5/5 : ENTRYPOINT [ &quot;/hello.sh&quot; ]
+ ---&gt; Running in 1eba3d4fd497
+Removing intermediate container 1eba3d4fd497
+ ---&gt; 0d1bbea0d708
+Successfully built 0d1bbea0d708
+Successfully tagged hello:v2
+szkrkr@suzukirokurounoMacBook-Pro-2 samples % docker run --rm --name=hello2 hello:v2
+ ___ _        __        __         _        _ 
+|_ _| |_      \ \      / /__  _ __| | _____| |
+ | || __|      \ \ /\ / / _ \| &apos;__| |/ / __| |
+ | || |_   _    \ V  V / (_) | |  |   &lt;\__ \_|
+|___|\__| ( )    \_/\_/ \___/|_|  |_|\_\___(_)
+          |/
+</code></pre><h2 id="glosarry">Glosarry</h2>
+<ul>
+<li>コンテナイメージ<br>コンテナ実行の素</li>
+<li>コンテナレジストリ<br>イメージ配布用サーバ</li>
+<li>コンテナランタイム<br>Dockerなど</li>
+<li>Build, Ship, Run<br>基本コンセプト</li>
+<li>レイヤ<br>変更差分</li>
+<li>Docker クライアント
+docker cli など</li>
+<li>Docker デーモン (dockerd)
+コマンドからDOckerAPI経由でデーモンに指示。
+イメージのpull/pushはDockerデーモンが行う。</li>
+<li>OCIランタイム
+低レベルランタイム
+コンテナーの作成など</li>
+</ul>
+<h2 id="参考">参考</h2>
+<ul>
+<li><a href="https://www.amazon.co.jp/dp/B08PNMRXKN/" target="_blank">イラストでわかるDockerとKubernetes</a></li>
+<li><img src="https://m.media-amazon.com/images/I/41g+F7WohJL.jpg" alt="イラストでわかるDockerとKubernetes" width="300px"></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="k8s.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Kubernetes">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Docker","level":"2.6.1","depth":2,"next":{"title":"Kubernetes","level":"2.6.2","depth":2,"path":"dev/docker/k8s.md","ref":"./dev/docker/k8s.md","articles":[]},"previous":{"title":"DockerとKubernetes","level":"2.6","depth":1,"ref":"","articles":[{"title":"Docker","level":"2.6.1","depth":2,"path":"dev/docker/docker.md","ref":"./dev/docker/docker.md","articles":[]},{"title":"Kubernetes","level":"2.6.2","depth":2,"path":"dev/docker/k8s.md","ref":"./dev/docker/k8s.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/docker/docker.md","mtime":"2021-08-01T15:38:47.785Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-08-01T15:39:14.678Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>

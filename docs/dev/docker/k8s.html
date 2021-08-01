@@ -1,0 +1,989 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Kubernetes · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5T5SMRWCW9"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-5T5SMRWCW9');
+        </script>
+        <!-- use google chart -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../react-redux/" />
+    
+    
+    <link rel="prev" href="docker.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Dev</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../azure/">
+            
+                <a href="../azure/">
+            
+                    
+                    Azure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../cs/">
+            
+                <a href="../cs/">
+            
+                    
+                    C#
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../java/">
+            
+                <a href="../java/">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../db-sql-server/">
+            
+                <a href="../db-sql-server/">
+            
+                    
+                    SQL Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../ddd/">
+            
+                <a href="../ddd/">
+            
+                    
+                    DDD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" >
+            
+                <span>
+            
+                    
+                    DockerとKubernetes
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.6.2" data-path="k8s.html">
+            
+                <a href="k8s.html">
+            
+                    
+                    Kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../react-redux/">
+            
+                <a href="../react-redux/">
+            
+                    
+                    React Redux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="../react-redux/react.html">
+            
+                <a href="../react-redux/react.html">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="../react-redux/redux.html">
+            
+                <a href="../react-redux/redux.html">
+            
+                    
+                    Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../vue/">
+            
+                <a href="../vue/">
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../jsts/">
+            
+                <a href="../jsts/">
+            
+                    
+                    JS/TS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../github-pages/">
+            
+                <a href="../github-pages/">
+            
+                    
+                    Github Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../firebase/">
+            
+                <a href="../firebase/">
+            
+                    
+                    Firebase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.11.1" data-path="../firebase/firebase-project.html">
+            
+                <a href="../firebase/firebase-project.html">
+            
+                    
+                    Firebase Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../ga/">
+            
+                <a href="../ga/">
+            
+                    
+                    Google Analytics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../project/">
+            
+                <a href="../project/">
+            
+                    
+                    プロジェクト進行関連
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.13.1" data-path="../project/process.html">
+            
+                <a href="../project/process.html">
+            
+                    
+                    プロセス
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13.2" data-path="../project/launch.html">
+            
+                <a href="../project/launch.html">
+            
+                    
+                    立ち上げ時
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../quality/">
+            
+                <a href="../quality/">
+            
+                    
+                    品質
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.14.1" data-path="../quality/testing.html">
+            
+                <a href="../quality/testing.html">
+            
+                    
+                    テスト関連
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14.2" data-path="../quality/capacity-planning.html">
+            
+                <a href="../quality/capacity-planning.html">
+            
+                    
+                    キャパシティプランニング
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" >
+            
+                <span>
+            
+                    
+                    書籍
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.15.1" data-path="../books/01-agile-restrospectives.html">
+            
+                <a href="../books/01-agile-restrospectives.html">
+            
+                    
+                    01 アジャイルレトロスペクティブズ　強いチームを育てる「ふりかえり」の手引き
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" >
+            
+                <span>
+            
+                    
+                    その他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.16.1" data-path="../other/kb-ergodash.html">
+            
+                <a href="../other/kb-ergodash.html">
+            
+                    
+                    ErgoDash
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="../tips/">
+            
+                <a href="../tips/">
+            
+                    
+                    TIPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Design</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../design/guideline/">
+            
+                <a href="../../design/guideline/">
+            
+                    
+                    ガイドライン
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Marketing</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../marketing/subscriptions/">
+            
+                <a href="../../marketing/subscriptions/">
+            
+                    
+                    サブスクリプション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../marketing/bzmodels/">
+            
+                <a href="../../marketing/bzmodels/">
+            
+                    
+                    ビジネスモデル
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hobbies</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../hobbies/onsen.html">
+            
+                <a href="../../hobbies/onsen.html">
+            
+                    
+                    温泉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../hobbies/yakimono.html">
+            
+                <a href="../../hobbies/yakimono.html">
+            
+                    
+                    やきもの
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../hobbies/yamanobori.html">
+            
+                <a href="../../hobbies/yamanobori.html">
+            
+                    
+                    山
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../../hobbies/okashi.html">
+            
+                <a href="../../hobbies/okashi.html">
+            
+                    
+                    お菓子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../../hobbies/vietnam.html">
+            
+                <a href="../../hobbies/vietnam.html">
+            
+                    
+                    ベトナム
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../../hobbies/nambei.html">
+            
+                <a href="../../hobbies/nambei.html">
+            
+                    
+                    南米音楽
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../../hobbies/coffee.html">
+            
+                <a href="../../hobbies/coffee.html">
+            
+                    
+                    コーヒー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="../../hobbies/whisky/">
+            
+                <a href="../../hobbies/whisky/">
+            
+                    
+                    ウィスキー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="../../hobbies/ishigaki/">
+            
+                <a href="../../hobbies/ishigaki/">
+            
+                    
+                    城(石垣)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="../../hobbies/sanpo/">
+            
+                <a href="../../hobbies/sanpo/">
+            
+                    
+                    散歩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="../../hobbies/cook/">
+            
+                <a href="../../hobbies/cook/">
+            
+                    
+                    ご飯
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Other</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../other/tax/">
+            
+                <a href="../../other/tax/">
+            
+                    
+                    税金
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Kubernetes</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="kubernetes">Kubernetes</h1>
+<p>基本は、 <a href="https://kubernetes.io/ja/docs/home/" target="_blank">https://kubernetes.io/ja/docs/home/</a> を参考にすること</p>
+<h2 id="k8s-アーキテクチャ">k8s アーキテクチャ</h2>
+<p><img src="assets/k8s-concept.drawio.png"></p>
+<ul>
+<li>Cluster .. コンテナ群を実行するマシンの集合</li>
+<li>Node .. コンテナを実行するマシン。Podは常にノード上で動作します。 <sup><a href="#fn_1" id="reffn_1">1</a></sup></li>
+<li>Pod .. 1つ以上のアプリケーションコンテナ(Dockerなど)のグループとそれらのコンテナの共有リソースを表すKubernetesの抽象概念 <sup><a href="#fn_1" id="reffn_1">1</a></sup></li>
+<li>Control Plane .. クラスタ全体にわたる状態を管理を担うコンポーネント群</li>
+<li>ワークロード .. Kubernetes上で実行中のアプリケーションです。異なる種類のワークロードやその一部を表すコアオブジェクトはさまざまなものがあり、DaemonSet、Deployment、Job、ReplicaSet、StatefulSetオブジェクトなどがあります。</li>
+<li>kube-apiserver .. クラスターの状態をコントローラーに渡すなどの Kubernetes APIを提供する。</li>
+<li>kube-controller-manager .. 実際のクラスタの実行を処理するコントローラー<sup><a href="#fn_2" id="reffn_2">2</a></sup>、を実行する。</li>
+<li>Deployment .. デプロイ、自動復旧、スケーリング、コンテナ群のアップデート、それに伴うロールバック(ローリングアップデート)を行う。</li>
+<li>ReplicaSet .. 上記Deploymentを行うレプリケーションを行う対象を見極めるためのリソース。</li>
+<li>StatefulSet .. 基本Ephemeralな存在であるPodに対し、データを永続化するためのリソース。</li>
+<li>DaemonSet .. ログやモニタリングなど、Podを跨いで、ノード上のデーモンプロセスのように動くためのリソース。</li>
+<li>Jobs .. Podを単発実行するためのリソース。CronJobもある。</li>
+<li>kube-scheduler .. クラスタの健全性は保たれているか。新しいコンテナが必要な場合、どこにデプロイするのか、などをみる。</li>
+<li>etcd .. 構成データとクラスタの状態に関する情報は、key-value ストアデータベースである etcd 内にあります。etcd は、フォールトトレラントで分散されており、クラスタに関する信頼できる基本的な情報源となるように設計されています。</li>
+<li>ConfigMap .. 機密情報ではない情報を持つ。コンテナの環境変数や、ファイルシステムにマウントし読取専用のファイルとして見せる、などに使う。</li>
+<li>Secrets .. コンテナイメージに含めたくない、秘匿性の高い情報を置いておける。</li>
+<li>Container Runtime .. CRI コンテナランタイム。kubeletからの指示を受け、イメージの取得や、コンテナ群をPodとして作成するソフトウェア。containered や CRI-O などがある。</li>
+<li>kubelet .. コントロールプレーンと通信する小さなアプリケーション</li>
+<li>kube-proxy .. Kubernetes ネットワークサービスを容易にするためのネットワークプロキシ。OSのパケットフィルタリング・レイヤーまたはトラフィック自体の転送に依存して、クラスタ内外のネットワーク通信を処理する。</li>
+<li>Persistant Volume .. 永続的なデータ格納領域。
+参考: <a href="https://www.redhat.com/ja/topics/containers/kubernetes-architecture" target="_blank">https://www.redhat.com/ja/topics/containers/kubernetes-architecture</a></li>
+</ul>
+<h2 id="k8s-構築例">k8s 構築例</h2>
+<p><img src="assets/k8s-example.drawio.svg"></p>
+<h2 id="pod">Pod</h2>
+<p><img src="assets/k8s-pod.drawio.png"></p>
+<p> <sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
+<blockquote>
+<p>Podには以下のものが含まれます:</p>
+<ul>
+<li>共有ストレージ(ボリューム)</li>
+<li>ネットワーキング(クラスターに固有のIPアドレス)</li>
+<li>コンテナのイメージバージョンや使用するポートなどの、各コンテナをどう動かすかに関する情報</li>
+</ul>
+</blockquote>
+<h2 id="node">Node</h2>
+<p> <sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
+<blockquote>
+<p>すべてのKubernetesノードでは少なくとも以下のものが動作します。</p>
+<ul>
+<li>Kubelet: Kubernetesマスターとノード間の通信を担当するプロセス。マシン上で実行されているPodとコンテナを管理します。</li>
+<li>レジストリからコンテナイメージを取得し、コンテナを解凍し、アプリケーションを実行することを担当する、Dockerのようなコンテナランタイム。</li>
+</ul>
+</blockquote>
+<h2 id="pvとpvc">PVとPVC</h2>
+<p><img src="assets/k8s-pv-pvc.drawio.png"></p>
+<h2 id="サービスディスカバリ">サービスディスカバリ</h2>
+<p>複数のPodに一つのIPを付与し、一つのサービスとして扱うことができる。</p>
+<p>Podに紐づくIPは、デプロイごとに変わったり、デプロイされないとIPがわからない、という問題がある。
+それを解決するための手段。</p>
+<p>複数のPodはつけたタグにたいして設定ができる。</p>
+<pre><code>apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  selector:
+    app: nginx
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 80
+</code></pre><p><img src="assets/k8s-service.drawio.png"></p>
+<h2 id="criコンテナランタイム">CRIコンテナランタイム</h2>
+<p><img src="assets/k8s-cri.drawio.png"></p>
+<blockquote id="fn_1">
+<sup>1</sup>. <a href="https://kubernetes.io/ja/docs/tutorials/kubernetes-basics/explore/explore-intro/" target="_blank">「Podとノードについて」</a><a href="#reffn_1" title="Jump back to footnote [1] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_2">
+<sup>2</sup>. <a href="https://kubernetes.io/ja/docs/concepts/architecture/controller/" target="_blank">コントローラ</a><a href="#reffn_2" title="Jump back to footnote [2] in the text."> ↩</a>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="docker.html" class="navigation navigation-prev " aria-label="Previous page: Docker">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../react-redux/" class="navigation navigation-next " aria-label="Next page: React Redux">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Kubernetes","level":"2.6.2","depth":2,"next":{"title":"React Redux","level":"2.7","depth":1,"path":"dev/react-redux/index.md","ref":"./dev/react-redux/index.md","articles":[{"title":"React","level":"2.7.1","depth":2,"path":"dev/react-redux/react.md","ref":"dev/react-redux/react.md","articles":[]},{"title":"Redux","level":"2.7.2","depth":2,"path":"dev/react-redux/redux.md","ref":"dev/react-redux/redux.md","articles":[]}]},"previous":{"title":"Docker","level":"2.6.1","depth":2,"path":"dev/docker/docker.md","ref":"./dev/docker/docker.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/docker/k8s.md","mtime":"2021-08-01T15:25:46.325Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-08-01T15:39:14.678Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
