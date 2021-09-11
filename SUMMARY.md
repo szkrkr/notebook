@@ -43,7 +43,7 @@
 
 ### Hobbies
 
-* [温泉](./hobbies/onsen.md)
+* [温泉](./hobbies/onsen/index.md)
 * [やきもの](./hobbies/yakimono.md)
 * [山](./hobbies/yamanobori.md)
 * [お菓子](./hobbies/okashi.md)
