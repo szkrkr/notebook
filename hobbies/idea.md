@@ -16,6 +16,11 @@
 # 動物の柄プロジェクションマッピング
 # Maven Plugin Manager
 Java Maven Projectに、Nuget Pacakge Manager 的な機能ない。欲しい。
+# レイアウトサービス
+gather的な家具配置
+# サブスクリプション管理
+自分の持っているサブスクリプションの管理
+# 
 
 
 
