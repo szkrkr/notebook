@@ -309,10 +309,13 @@ szkrkr@suzukirokurounoMacBook-Pro-2 samples % docker run --rm --name=hello2 hell
 ## TroubleShooting
 
 - COPY: *ではなく.を使用する
+
 ```
 × COPY　build/libs/* .
 ○ COPY build/libs/. .
 ```
+
+参考: https://stackoverflow.com/questions/30215830/dockerfile-copy-keep-subdirectory-structure
 
 
 ## Glosarry
