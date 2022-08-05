@@ -306,6 +306,14 @@ szkrkr@suzukirokurounoMacBook-Pro-2 samples % docker run --rm --name=hello2 hell
           |/  
 ```
 
+## TroubleShooting
+
+- COPY: *ではなく.を使用する
+```
+× COPY　build/libs/* .
+○ COPY build/libs/. .
+```
+
 
 ## Glosarry
 * コンテナイメージ  
@@ -326,6 +334,7 @@ szkrkr@suzukirokurounoMacBook-Pro-2 samples % docker run --rm --name=hello2 hell
 * OCIランタイム
   低レベルランタイム
   コンテナーの作成など
+
 
 ## 参考
 * [イラストでわかるDockerとKubernetes](https://www.amazon.co.jp/dp/B08PNMRXKN/)
