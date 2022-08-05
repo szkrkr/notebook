@@ -15,3 +15,24 @@ before_scriptに載せるでも、別のJobにするでも、対象のJobで一�
 参考: https://docs.gitlab.com/ee/user/clusters/agent/ci_cd_workflow.html
 
 
+### multiline
+
+https://gitlab.com/gitlab-org/gitlab-runner/-/issues/166
+
+```
+> mark will combine all to one. You can't have the multi lines scripts.
+| can't identify the black slash and split everything. You can't write a command in multi-line.
+- without other decorate, well, it hard to match both YAML format and Shell script syntax.
+```
+
+
+- sample 
+```
+- > command
+  --option xxx
+```
+->
+```
+command --option xxx
+```
+
