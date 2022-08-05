@@ -83,6 +83,30 @@ spec:
 
 <img src="./assets/k8s-cri.drawio.png" >
 
+## AWS EKSに向けてConfigureする
+
+- Role作成
+- 権限を与える (system masterが最大)
+- profileに記載する
+- aws configureにする
+- aws eks update-kubeconfig --name {name} --profile {profile_name}`
+- kubectl config get-contexts
+- kubectl get pod -n {namespace} --context {context_name}
+
+## Portforwardする
+
+- kubectl -n {namespace} port-forward deployment/{deployment_name} 8084:80 --context {context_name}
+
+こうすると localhost:8084 にアクセスで、ポッド内の 80　ポートにつなぐ。
+
+https://www.containiq.com/post/kubectl-port-forward
+
+https://udomomo.hatenablog.com/entry/2020/11/01/235612
+
+- & を最後につけるとbackground processになる。その場合は、 `pkill -f "port-forward"` でプロセスのキルができる
+
+https://stackoverflow.com/questions/37288500/how-to-undo-a-kubectl-port-forward
+
 
 [^1]: [「Podとノードについて」](https://kubernetes.io/ja/docs/tutorials/kubernetes-basics/explore/explore-intro/)
 [^2]: [コントローラ](https://kubernetes.io/ja/docs/concepts/architecture/controller/)
