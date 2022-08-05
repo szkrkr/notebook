@@ -317,6 +317,17 @@ szkrkr@suzukirokurounoMacBook-Pro-2 samples % docker run --rm --name=hello2 hell
 
 参考: https://stackoverflow.com/questions/30215830/dockerfile-copy-keep-subdirectory-structure
 
+- 複数Dockerfileを置く場合
+
+```
+Dockerfile.preparation
+Dockerfile.execute
+```
+
+とかにする
+
+https://stackoverflow.com/questions/27409761/docker-multiple-dockerfiles-in-project
+
 
 ## Glosarry
 * コンテナイメージ  
