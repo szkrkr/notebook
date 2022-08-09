@@ -328,6 +328,12 @@ Dockerfile.execute
 
 https://stackoverflow.com/questions/27409761/docker-multiple-dockerfiles-in-project
 
+- apk: command not found
+
+> Ubuntu なら apt-get
+> Centos なら yum
+> Apline では apk
+https://qiita.com/YumaInaura/items/57ebe9bc572af4da799a
 
 ## Glosarry
 * コンテナイメージ  
