@@ -1,0 +1,17 @@
+# gradle
+
+## command
+
+- grandle assemble vs build
+
+buildの方が　assemble +アルファという感じ。lintとかもする
+
+https://stackoverflow.com/questions/44185165/what-are-the-differences-between-gradle-assemble-and-gradle-build-tasks
+
+- gradle test vs check
+
+checkにはtest以外にもやることを設定できる
+
+https://www.baeldung.com/gradle-test-vs-check
+
+

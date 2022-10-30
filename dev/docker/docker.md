@@ -306,6 +306,34 @@ szkrkr@suzukirokurounoMacBook-Pro-2 samples % docker run --rm --name=hello2 hell
           |/  
 ```
 
+## TroubleShooting
+
+- COPY: *ではなく.を使用する
+
+```
+× COPY　build/libs/* .
+○ COPY build/libs/. .
+```
+
+参考: https://stackoverflow.com/questions/30215830/dockerfile-copy-keep-subdirectory-structure
+
+- 複数Dockerfileを置く場合
+
+```
+Dockerfile.preparation
+Dockerfile.execute
+```
+
+とかにする
+
+https://stackoverflow.com/questions/27409761/docker-multiple-dockerfiles-in-project
+
+- apk: command not found
+
+> Ubuntu なら apt-get
+> Centos なら yum
+> Apline では apk
+https://qiita.com/YumaInaura/items/57ebe9bc572af4da799a
 
 ## Glosarry
 * コンテナイメージ  
@@ -326,6 +354,7 @@ szkrkr@suzukirokurounoMacBook-Pro-2 samples % docker run --rm --name=hello2 hell
 * OCIランタイム
   低レベルランタイム
   コンテナーの作成など
+
 
 ## 参考
 * [イラストでわかるDockerとKubernetes](https://www.amazon.co.jp/dp/B08PNMRXKN/)

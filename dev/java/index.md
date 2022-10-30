@@ -1,5 +1,11 @@
 
 
+## テストプロジェクトをjarで固められるか?
+
+- jarでは固められるけど　Main.main() がないので実行できない
+- main()にテストを実行するように記載する  
+https://support.smartbear.com/alertsite/docs/monitors/web/selenium/create-runnable-jar-from-selenium-script-using-eclipse.html
+
 ## trouble shooting
 * `No serializer found for class com.szkrkr.apidemo.app.models.Member and no properties discovered to create BeanSerializer`
 実行時エラー。APIのレスポンス
