@@ -7,7 +7,6 @@
 * Composeer
 * リズム
 
-
 ## リズム
 ### ワイニョ(huayño), ワイノ(huayno / wayno), カルナバリート(carnavalito)
 ### モレナーダ(morenada)
@@ -17,6 +16,5 @@
 ### ティンク(tinku)
 ### チュントゥンキ(chuntunqui)
 ### ヤラビ(yaravi)
-
-
+    
 

@@ -20,7 +20,13 @@ Java Maven Projectに、Nuget Pacakge Manager 的な機能ない。欲しい。
 gather的な家具配置
 # サブスクリプション管理
 自分の持っているサブスクリプションの管理
-# 
+# 化学構造式描画 on Markdown 
+
+like mermaid
+
+ChemDrawなどを参考に。
+
+書き方はここ　https://www.chem-station.com/blog/2018/12/chemdraw.html
 
 
 

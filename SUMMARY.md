@@ -43,6 +43,11 @@
 
 ### Hobbies
 
+* [arts](./hobbies/arts/index.md)
+* [cook](./hobbies/cook/index.md)
+  * [carbohydrate](./hobbies/cook/carb.md)
+  * [toxic](./hobbies/cook/toxic.md)
+  * [umami](./hobbies/cook/umami.md)
 * [温泉](./hobbies/onsen/index.md)
 * [やきもの](./hobbies/yakimono.md)
 * [山](./hobbies/yamanobori.md)
