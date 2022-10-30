@@ -44,21 +44,22 @@
 ### Hobbies
 
 * [arts](./hobbies/arts/index.md)
+  * [yakimono](./hobbies/arts/yakimono.md)
 * [cook](./hobbies/cook/index.md)
   * [carbohydrate](./hobbies/cook/carb.md)
+  * [okashi](./hobbies/cook/okashi.md)
   * [toxic](./hobbies/cook/toxic.md)
   * [umami](./hobbies/cook/umami.md)
+* [geo](./hobbies/geo/index.md)
+  * [sanpo](./hobbies/geo/sanpo.md)
+  * [yamanobori](./hobbies/geo/yamanobori.md)
+* [ishigaki - 城(石垣)](./hobbies/ishigaki/index.md)
+* [music](./hobbies/music/nambei.md)
 * [温泉](./hobbies/onsen/index.md)
-* [やきもの](./hobbies/yakimono.md)
-* [山](./hobbies/yamanobori.md)
-* [お菓子](./hobbies/okashi.md)
 * [ベトナム](./hobbies/vietnam.md)
 * [南米音楽](./hobbies/nambei.md)
 * [コーヒー](./hobbies/coffee.md)
 * [ウィスキー](./hobbies/whisky/index.md)
-* [城(石垣)](./hobbies/ishigaki/index.md)
-* [散歩](./hobbies/sanpo/index.md)
-* [ご飯](./hobbies/cook/index.md)
 
 ### Other
 
