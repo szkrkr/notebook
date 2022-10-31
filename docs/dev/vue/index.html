@@ -1,12 +1,12 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <title>Vue · HonKit</title>
+        <title>Vue · szkrkr's knowledge</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 3.6.17">
+        <meta name="generator" content="HonKit 4.0.4">
         
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -26,7 +26,11 @@
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
@@ -80,7 +84,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -850,7 +854,7 @@
 
     <li>
         <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            Published with HonKit
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -892,7 +896,7 @@
 <p><code>npm i vuex --save</code> ができなかった。謎の <code>vue add vuex</code> でできた。
 <a href="https://stackoverflow.com/questions/66652577/how-can-i-install-vuex-in-a-vue-cli-project" target="_blank">https://stackoverflow.com/questions/66652577/how-can-i-install-vuex-in-a-vue-cli-project</a></p>
 <h2 id="vue-で　tsにするには">.vue で　tsにするには</h2>
-<p><code>&lt;script&gt;</code> -&gt; <code>&lt;script lang=&quot;ts&quot;&gt;</code> にする。</p>
+<p><code><script></script></code> -&gt; <code><script lang="ts"></script></code> にする。</p>
 <h2 id="ts-ファイルにしたら-stateが効かない。　--error-in-srccomponentsflashmessagesvue2825-ts2339-property-store-does-not-exist-on-type-componentpublicinstance----getallflashmessages-word---emitsoptions---false-componentoptionsbase----getallflashmessages-word---componentoptionsmixin-componentoptionsmixin-emitsoptions-string-">ts ファイルにしたら $stateが効かない。　- &quot;ERROR in src/components/FlashMessages.vue:28:25 TS2339: Property &apos;$store&apos; does not exist on type &apos;ComponentPublicInstance&lt;{}, {}, {}, { getAllFlashMessages(): Word; }, {}, EmitsOptions, {}, {}, false, ComponentOptionsBase&lt;{}, {}, {}, { getAllFlashMessages(): Word; }, {}, ComponentOptionsMixin, ComponentOptionsMixin, EmitsOptions, string, {}&gt;&gt;&apos;.&quot;</h2>
 <p><a href="https://stackoverflow.com/questions/64412243/vue-js-3-and-typescript-property-store-does-not-exist-on-type-componentpub" target="_blank">https://stackoverflow.com/questions/64412243/vue-js-3-and-typescript-property-store-does-not-exist-on-type-componentpub</a></p>
 <h2 id="ことはじめ">ことはじめ</h2>
@@ -943,7 +947,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Vue","level":"2.8","depth":1,"next":{"title":"JS/TS","level":"2.9","depth":1,"path":"dev/jsts/index.md","ref":"dev/jsts/index.md","articles":[]},"previous":{"title":"Redux","level":"2.7.2","depth":2,"path":"dev/react-redux/redux.md","ref":"dev/react-redux/redux.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/vue/index.md","mtime":"2021-04-28T11:59:39.343Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2022-10-31T11:48:05.302Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Vue","level":"2.8","depth":1,"next":{"title":"JS/TS","level":"2.9","depth":1,"path":"dev/jsts/index.md","ref":"dev/jsts/index.md","articles":[]},"previous":{"title":"Redux","level":"2.7.2","depth":2,"path":"dev/react-redux/redux.md","ref":"dev/react-redux/redux.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mermaid"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mermaid":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"szkrkr's knowledge","language":"ja","gitbook":"*"},"file":{"path":"dev/vue/index.md","mtime":"2021-04-28T11:59:39.343Z","type":"markdown"},"gitbook":{"version":"4.0.4","time":"2022-10-31T12:08:51.897Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -995,6 +999,14 @@
     </script>
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-mermaid/mermaid-load.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-mermaid/mermaid.min.js"></script>
+        
     
         
         <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>

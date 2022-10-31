@@ -11,6 +11,7 @@
   "author": "szkrkr",
   "license": "ISC",
   "devDependencies": {
-    "honkit": "^4.0.4"
+    "honkit": "^4.0.4",
+    "honkit-plugin-mermaid": "^0.1.4"
   }
 }

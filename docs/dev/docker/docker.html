@@ -1,12 +1,12 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <title>Docker · HonKit</title>
+        <title>Docker · szkrkr's knowledge</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 3.6.17">
+        <meta name="generator" content="HonKit 4.0.4">
         
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -26,7 +26,11 @@
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../../gitbook/honkit-plugin-mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
@@ -78,7 +82,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
+    <input type="text" placeholder="検索ワードを入力" />
 </div>
 
             
@@ -848,7 +852,7 @@
 
     <li>
         <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
-            Published with HonKit
+            HonKitで公開 
         </a>
     </li>
 </ul>
@@ -1126,19 +1130,19 @@ docker cpを使う。</li>
 <h2 id="コンテナーのイメージ化">コンテナーのイメージ化</h2>
 <p>Dockerfileを作る。</p>
 <h3 id="build-ship-run-の実践">Build, Ship, Run の実践</h3>
-<pre><code class="lang-sh">% <span class="hljs-built_in">cd</span> dev/docker/assets/samples/myimage 
+<pre><code class="lang-sh">% cd dev/docker/assets/samples/myimage 
 % ls
-% cat &lt;&lt;<span class="hljs-string">EOF &gt;  hello.sh
+% cat &lt;<eof>  hello.sh
 heredoc&gt; #!/bin/bash
 heredoc&gt; echo &quot;Hello, World!&quot;
 heredoc&gt; exec sleep infinity
-heredoc&gt; EOF</span>
+heredoc&gt; EOF
 % chmod +x hello.sh 
-% cat &lt;&lt;<span class="hljs-string">EOF &gt;  Dockerfile
+% cat &lt;<eof>  Dockerfile
 heredoc&gt; FROM ubuntu:20.04
 heredoc&gt; COPY ./hello.sh /hello.sh
 heredoc&gt; ENTRYPOINT [ &quot;/hello.sh&quot; ]
-heredoc&gt; EOF</span>
+heredoc&gt; EOF
 % docker build -t myimage:v1 .   
 Sending build context to Docker daemon  3.072kB
 Step 1/3 : FROM ubuntu:20.04
@@ -1147,12 +1151,12 @@ Step 1/3 : FROM ubuntu:20.04
 57671312ef6f: Pull complete 
 5e9250ddb7d0: Pull complete 
 Digest: sha256:cf31af331f38d1d7158470e095b132acd126a7180a54f263d386da88eb681d93
-Status: Downloaded newer image <span class="hljs-keyword">for</span> ubuntu:20.04
+Status: Downloaded newer image for ubuntu:20.04
  ---&gt; 7e0aa2d69a15
 Step 2/3 : COPY ./hello.sh /hello.sh
  ---&gt; 8a968d611aad
-Step 3/3 : ENTRYPOINT [ <span class="hljs-string">&quot;/hello.sh&quot;</span> ]
- ---&gt; Running <span class="hljs-keyword">in</span> d3a43a91fd8d
+Step 3/3 : ENTRYPOINT [ &quot;/hello.sh&quot; ]
+ ---&gt; Running in d3a43a91fd8d
 Removing intermediate container d3a43a91fd8d
  ---&gt; c17a675837ad
 Successfully built c17a675837ad
@@ -1173,11 +1177,11 @@ v1: digest: sha256:bfdbf07b41369ca5e0aa4929e4be4913c9ddb83ac25930027dc336d52ba73
 % docker pull szkrkr/myimage:v1
 v1: Pulling from szkrkr/myimage
 Digest: sha256:bfdbf07b41369ca5e0aa4929e4be4913c9ddb83ac25930027dc336d52ba733f6
-Status: Image is up to date <span class="hljs-keyword">for</span> szkrkr/myimage:v1
+Status: Image is up to date for szkrkr/myimage:v1
 docker.io/szkrkr/myimage:v1
 % docker run szkrkr/myimage:v1 
 Hello, World!
-</code></pre>
+</eof></eof></code></pre>
 <h2 id="docker-compoase">docker-compoase</h2>
 <p>下記のdocker cliを一つのYAMLにまとめることができる、。</p>
 <pre><code>docker network create wordpress000net1
@@ -1427,7 +1431,7 @@ docker cli など</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Docker","level":"2.6.1","depth":2,"next":{"title":"Kubernetes","level":"2.6.2","depth":2,"path":"dev/docker/k8s.md","ref":"./dev/docker/k8s.md","articles":[]},"previous":{"title":"DockerとKubernetes","level":"2.6","depth":1,"ref":"","articles":[{"title":"Docker","level":"2.6.1","depth":2,"path":"dev/docker/docker.md","ref":"./dev/docker/docker.md","articles":[]},{"title":"Kubernetes","level":"2.6.2","depth":2,"path":"dev/docker/k8s.md","ref":"./dev/docker/k8s.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/docker/docker.md","mtime":"2022-10-30T13:33:23.899Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2022-10-31T11:48:05.302Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Docker","level":"2.6.1","depth":2,"next":{"title":"Kubernetes","level":"2.6.2","depth":2,"path":"dev/docker/k8s.md","ref":"./dev/docker/k8s.md","articles":[]},"previous":{"title":"DockerとKubernetes","level":"2.6","depth":1,"ref":"","articles":[{"title":"Docker","level":"2.6.1","depth":2,"path":"dev/docker/docker.md","ref":"./dev/docker/docker.md","articles":[]},{"title":"Kubernetes","level":"2.6.2","depth":2,"path":"dev/docker/k8s.md","ref":"./dev/docker/k8s.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["mermaid"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mermaid":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"szkrkr's knowledge","language":"ja","gitbook":"*"},"file":{"path":"dev/docker/docker.md","mtime":"2022-10-30T13:33:23.899Z","type":"markdown"},"gitbook":{"version":"4.0.4","time":"2022-10-31T12:08:51.897Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1479,6 +1483,14 @@ docker cli など</li>
     </script>
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/honkit-plugin-mermaid/mermaid-load.js"></script>
+        
+    
+        
+        <script src="../../gitbook/honkit-plugin-mermaid/mermaid.min.js"></script>
+        
     
         
         <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
