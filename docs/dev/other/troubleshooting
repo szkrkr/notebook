@@ -1,0 +1,23 @@
+# trouble shooting
+
+
+## $ ./XXXXX.sh: 111: ./XXXXX.sh: Syntax error: "(" unexpected
+
+bashの違い. bash -c "{command}" とか。
+
+https://yatta47.hateblo.jp/entry/2014/04/20/222707
+
+https://pc.casey.jp/archives/153904527
+
+https://superuser.com/questions/795837/how-to-execute-a-command-within-a-bash-script
+
+## failed to satisfy constraint: Member must satisfy regular expression pattern: [\w+=,.@-]+
+
+-> single/double qutoationを見直す
+
+https://stackoverflow.com/questions/69548587/failed-to-satisfy-constraint-member-must-satisfy-regular-expression-pattern
+
+## syntax error: bad substitution
+
+https://amateur-engineer-blog.com/tekton-bad-substitution/
+
